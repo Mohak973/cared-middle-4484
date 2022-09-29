@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+em {
+    color: rgb(229, 124, 216);
+    font-family: "GT Haptik Medium Rotalic", sans-serif;
+}
+
+h1 {
+    font-size: 46.8304px;
+    font-family: "GT Haptik Medium Rotalic", sans-serif;
+    color: #FFF3ED;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    font-size: 18px;
+
+
+}
+
+#form_parent {
+    background-color: #2C1338;
+    color: white;
+    padding: 20px 94px 60px;
+
+}
+
+.first {
+    margin: 0;
+    color: #FCE5D8;
+    line-height: 1.5;
+    font-size: clamp(1.375rem * 0.75, 1.55vw, 1.375rem);
+    max-width: 90%;
+}
+
+
+.end {
+    font-size: .75rem;
+    line-height: 1.4;
+    margin-bottom: 50px;
+    max-width: 90%;
+}
+
+.end>a {
+    color: #FCE5D8;
+    text-decoration: unset;
+    border-bottom: 1px solid #E57CD8;
+
+}
+
+.end>a:hover {
+    color: #E57CD8;
+}
+
+input {
+    padding: .8125rem 1.25rem;
+    width: 65%;
+    border: .125rem solid #ABA0AF;
+    caret-color: #2C1338;
+    background-color: #2C1338;
+    color: #FCE5D8;
+
+}
+
+input:focus {
+    background-color: #FCE5D8;
+    color: black;
+    font-weight: bold;
+}
+
+input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+span {
+    position: absolute;
+    color: rgba(128, 128, 128, 0.74);
+    margin-left: 339px;
+    cursor: pointer;
+    font-size: 2px;
+
+}
+
+#button {
+    display: flex;
+    gap: 3.125rem;
+}
+
+#button div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#button>div:nth-child(2) {
+    width: 265px;
+}
+
+#log_form,
+#timer {
+    margin-bottom: 30px;
+}
+
+#log_form>div {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+
+}
+
+.gg-google,
+.gg-google::before {
+    box-sizing: border-box;
+    display: block
+}
+
+.gg-google {
+    /* color: #FCE5D8; */
+    position: relative;
+    transform: scale(var(--ggs, 1));
+    width: 20px;
+    height: 20px;
+    border: 4px solid;
+    border-right-color: transparent;
+    border-radius: 22px;
+
+
+}
+
+.gg-google::before {
+    content: "";
+    position: absolute;
+    border-top: 4px solid;
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+    border-radius: 0 0 10px 0;
+    width: 10px;
+    height: 12px;
+    right: -4px;
+    bottom: -4px
+}
+
+.google_btn {
+    background-color: transparent;
+    border: 1.5008px solid #FCE5D8;
+    border-radius: 60px;
+    padding: 11.6px;
+    color: #FCE5D8;
+}
+
+#Sign_up_btn {
+    background-color: #E57CD8;
+    width: 200px;
+    padding: 15px 35px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 30px;
+}
+
+#Sign_up_btn:hover {
+    background-color: #564260;
+    color: #FFF;
+}
+
+.google_btn:hover {
+    background-color: #FCE5D8;
+    color: black;
+
+}
+
+#form_parent>img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+/*  Timet part */
+#timer>div:first-child {
+    color: black;
+    background-color: #FFF;
+    width: 65%;
+    margin-top: 4.375rem;
+    padding: .9375rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .9375rem;
+
+}
+
+#timer>div>div:nth-child(2) {
+    display: flex;
+    gap: .75rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#play {
+    font-size: 2.5rem;
+    color: #E57CD8;
+
+
+}
+
+#stop {
+    font-size: 2.5rem;
+    color: rgb(252, 133, 90);
+    display: none;
+
+}
+
+#play {}
+
+.animation_text {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 6s steps(15) infinite;
+    border-right: .125rem solid black;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+
+    50% {
+        width: 14ch;
+    }
+
+}
+
+#hand {
+    position: absolute;
+    margin: 12.5rem 3.75rem;
+    animation-name: Hand;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    display: none;
+}
+
+@keyframes Hand {
+    0% {
+        top: 12.5rem;
+    }
+
+    25% {
+        top: 6.25rem;
+    }
+
+    50% {
+        top: 6.25rem
+    }
+
+    100% {
+        top: 9.375rem;
+    }
+
+}
+#timer_p{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#timer_p>h4 {
+    max-width: 60%;
+    opacity: 1;
+    transition-delay: 3.3s;
+    margin: 3.125rem 0rem 0rem 3.125rem;
+    line-height: 1.4;
+}
+#timer_p>p{
+    max-width: 60%;
+    text-align: right;
+    margin-left: 3.125rem;
+}

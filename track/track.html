@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./track.css">
+        <style>
+            #img_parent{
+                width: 80%;
+                margin: auto;
+                display: flex;
+                background-color: #412A4C ;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="form_parent">
+            <h1>Simple time tracking to save <br> you <em>time</em> and <em>money</em>.</h1>
+            <div id="form">
+                <div>
+                    <p class="first">Bill accurately, measure profitability, manage workloads — and spend less time on
+                        it all.</p>
+                    <div id="log_form">
+                        <div> <input type="email" placeholder="Email"></div>
+                        <div id="wrapper"><input type="password" id="password" placeholder="A strong password">
+                            <span>
+                                <i class="fa fa-eye" id="hide1" style="font-size:36px" onclick="toggle()"></i>
+                                <i class="fa fa-eye-slash" id="hide2" style="display: none; font-size:36px "
+                                    onclick="toggle()"></i>
+
+                            </span>
+                        </div>
+                        <div id="button">
+                            <div> <button id="Sign_up_btn">Sign up with email</button> </div>
+                            <div>
+                                <p>Or sign up with:</p>
+                                <button class="google_btn"><i class="gg-google"></i></button>
+                                <button class="google_btn" style="padding: 7px 10px;"><i class="fa fa-apple"
+                                        style="font-size:1.7rem"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="end">By signing up, you agree to our <a href="#">terms of service</a>, <a href="#">privacy
+                            policy</a> and to receiving marketing
+                        communication from Toggl Track. You can opt out anytime.</p>
+                </div>
+                <div id="timer">
+                    <div>
+                        <div>
+                            <p class="animation_text">
+                                Stand-up meeting
+
+                            </p>
+                        </div>
+                        <div>
+                            <div id="stop_watch">00:00:00</div>
+                            <div id="icon">
+                                <i class="fa fa-play-circle" id="play"></i>
+                                <i class="fa fa-stop-circle" id="stop"></i>
+                            </div>
+                            <img id="hand"
+                                src="https://public-assets.toggl.com/b/static/64fbdaf45a4b3a8f908596e24852e2c4/2f12d/toggl-hand.png"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div id="timer_p">
+                        <h4>
+                            “I love the ease of just clocking in and out with <em> just one click!</em>”
+                            <br>
+                        </h4>
+                        <p>– Quelani P.</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <p>TRUSTED BY OVER 6 MILLION USERS ACROSS 120 COUNTRIES</p>
+                <img src="https://public-assets.toggl.com/b/static/21b44745982a70f8f66a90507e5f6ee1/66a3b/brands-mixed-desktop-light.avif"
+                    alt="">
+            </div>
+        </div>
+        <div>
+            <div>
+                <div class="Wrapper">
+                    <h2 color="#412A4C">Time tracking for all your
+                        productivity and profitability needs
+                    </h2>
+                    <div>
+                        <button class=""><em>Employee time tracking</em></button>
+                        <button>Billing &amp; invoicing</button>
+                        <button>Project budgeting</button>
+                        <button>Reporting</button>
+                        <button>Payroll</button>
+                    </div>
+                    <div>
+                        <div id="img_parent">
+                            <div>
+                                <h3 color="#FFF3ED">Make timesheets history.</h3>
+                                <ul>
+                                    <li>Get the data you need without disrupting your team's workflow. Track's one-click
+                                        time tracking syncs across multiple platforms.</li>
+                                    <li>Get employee buy-in with a tool designed to empower teams with knowledge, not
+                                        micromanage them.</li>
+                                </ul>
+                                <div><a href="#">Learn more</a>
+                                    <a caretdirection="right" color="#FFF3ED" 
+                                        href="#">Or sign up for free</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                        <img data-gatsby-image-ssr="" data-main-image=""
+                                            style="object-fit: contain; opacity: 1;"
+                                            sizes="(min-width: 759px) 759px, 100vw" decoding="async" loading="lazy"
+                                            alt="Screenshot of Toggl Track's calendar view"
+                                            src="https://public-assets.toggl.com/b/static/2f9323cffe44aa5a7b876e19dbd12a09/428cd/employee-time-tracking-short.png"
+                                            srcset="https://public-assets.toggl.com/b/static/2f9323cffe44aa5a7b876e19dbd12a09/e30f2/employee-time-tracking-short.png 190w,https://public-assets.toggl.com/b/static/2f9323cffe44aa5a7b876e19dbd12a09/19bb7/employee-time-tracking-short.png 380w,https://public-assets.toggl.com/b/static/2f9323cffe44aa5a7b876e19dbd12a09/428cd/employee-time-tracking-short.png 759w,https://public-assets.toggl.com/b/static/2f9323cffe44aa5a7b876e19dbd12a09/7ebe3/employee-time-tracking-short.png 1518w">
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>
+<script src="./track.js"></script>
