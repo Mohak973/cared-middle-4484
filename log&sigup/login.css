@@ -1,0 +1,185 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: rgb(252, 229, 216);
+}
+label{
+font-size: small;
+display: block;
+    text-align: left;
+    line-height: 1.6;
+    font-size: clamp(0.95rem, 1vw, 1rem);
+    color: rgb(252, 229, 216);
+   font-size: 13px;
+
+}
+
+#log_div{
+    width: 100%;
+    height: 120vh;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+    background-color: rgb(65, 42, 76)
+    
+}
+#login_footer{
+    width: 100%;
+    height: 300px;
+   
+    background-image: url(https://www.blurb.com/blog/wp-content/uploads/2018/11/blog_fy19_headers_9bookwritingapps_1920x1080_01.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#login{
+    width: 45%;
+    height: auto;
+    padding-bottom: 6vh;
+    margin: auto;
+    position: absolute;
+    top: 45vh;
+    left: 30%;
+    background-color: rgb(44, 19, 56);
+z-index: 10;
+box-shadow: 0 1px 4px rgb(28 28 28 / 10%), 0 4px 6px rgb(28 28 28 / 4%), 0 8px 16px rgb(28 28 28 / 4%), 0 10px 20px 2px rgb(28 28 28 / 2%), 0 12px 24px 4px rgb(28 28 28 / 4%)
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    
+}h1{
+    font-family: "GT Haptik Medium", sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: clamp(2.25rem, 4.2vw, 4.5rem);
+    color: rgb(255, 243, 237);
+    margin-bottom: 25px;
+    text-align: center;
+}#login_footer{
+    line-height: 1.5;
+    font-size: clamp(1.0125rem, 1.25vw, 1.125rem);
+    color: rgb(255, 243, 237);
+    text-align: center;
+    
+}
+input{
+    width: 99%;
+    height: 30px;
+    border: 2px solid rgb(171, 160, 175);
+    border: none;
+    background: rgb(252, 229, 216);
+    color: rgb(44, 19, 56) !important;
+
+}
+#loging_main{
+    width: 90%;
+    margin: auto;
+    height: 80%;
+
+    margin-top: 55px;
+}
+button{
+    margin-top: 30px;
+    text-align: center;
+    display:  flex;
+justify-content: center;
+    width: 100%;
+    font-family: "GT Haptik Medium", sans-serif;
+    font-size: 1rem;
+    padding: 14px 35px;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    height: 45px;
+    transition: background-color 150ms linear 0s, color 150ms linear 0s;
+    background-color: rgb(229, 124, 216);
+    color: rgb(255, 255, 255)
+    
+}#wrong,#b_password,#b_email{
+    line-height: 1.6;
+    font-size: clamp(0.95rem, 1vw, 1rem);
+    text-align: left;
+    color: rgb(246, 108, 108);
+    
+
+}#forgetpassword{
+    text-align: end;
+    text-align: end;
+text-decoration: underline;
+font-size: small;
+}
+svg{-webkit-text-size-adjust: 90%;
+    tab-size: 2;
+    font-weight: 300;
+    font-family: "GT Haptik Medium", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1.5;
+    color: black;
+    fill: white;
+    box-sizing: border-box;
+    width: 15px;
+    margin-right: 10px;}
+    .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 4px solid transparent;
+        border-left: 7px solid white;
+        border-bottom: 4px solid transparent;
+        margin-top: 17px;
+        margin-left: 5px;
+    }#SSO{
+display: flex;
+
+width: 50%;
+justify-content: center;
+height: auto;
+margin: auto;
+margin-top: 30px;
+
+    }svg:hover {
+        fill: rgb(229, 124, 216);
+      }
+      #SSO>p:hover{
+       color: rgb(229, 124, 216);
+      }
+      button:hover{
+        background-color: rgba(56, 56, 56, 0.461);
+      }
+      #SSO>p{
+       font-size: small; 
+      }#for_signup{
+        margin-bottom: 75px;
+
+      }
+     #login_bygoogle{
+        display: flex;
+        gap: 20px;
+     }#login_bygoogle>div{
+        font-family: "GT Haptik Medium", sans-serif;
+    font-size: small;
+    background: white;
+    border: none;
+    color: rgb(44, 19, 56);
+    width: 50%;
+    
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    justify-content: center;
+   
+     }
+     .with_other{
+width: 32px;
+height: 27px;
+     }
