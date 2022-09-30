@@ -5,23 +5,35 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Toggl Track: Time Tracking Software for Any Workflow </title>
+        <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgBtVdNSFRRFD73jqn5AwMJUYLNaKQuSo3apFAGumhR2lI0CVxYmwYyEIkccSNoNNLCFi4MrUWbpq2CP2AZFP4VaIHOJJIkGo8cTUffu93zZt44f++9a44fPN7Mu+fe853vnnvuvQQE4XFMWY+lpVaBhV4FhRUTQmwAzBpoJRJjzEuATMtMGZO3tt12V4kkMi4xM1hpnrPtUeag1FK/71AAjPT5ZaXN3lHohf8hgBGnZKa3MqY44BBY80mu+r7mtmlpVBImgFEzCxlhBGyQCDDw+mVWHk8NGv1hueV7cUKdI/hYyXzM5ZavxbFNYTho5LM/59V33okcSE9JM+8QR4kIBQ7i/NfGGjx616E+Pv8WCCGoBOZXDIEZx8dnCZXdgERK+vHWCAIofVaGVSjbN3e2YOjbeMz3Cc+kqooIeKAOD/cZIiBbwCnS8e3sINS9aoL+T+6Ytp73r9XpGPjsFhkKknhtUQl4nB4rr2r1Zh26hnvhBXeCCuglHCqA5NDODJTSeswFesy/XWVm3M+j0mSvPl8JXTebY2w6bzVDRX6Z+huVEiBhtfDSTnlSXDOywqgGgpLXXaqCxrKauAqczMyCpusNUMUJaiS0ZaoHyvcVSggtMjLS5hsd1F42FQvucYK5vC4gBufHDW0JY8WogM3I6IN3Un2LONdQWRCYiolgXwPYKDD9HQ7lx6RDnM3KAVFcsV9U3z7e12RpWqlRq29nv8KlJwuU2jjYNKmSSUCIpKdChkF9R0IPyxsCdlHkDkBcorhB6LVi4mkZPxSVUEgO5xqf6FWxuLYU6o+PAbyUgTJjZFFxLri2vwyG8sEIaNMfrIYXThcYGxMyTUGBUSOb20WVaoQoa49Ahesc6Q0lXp3JypFBGaO7yaluNQ90gBJiAUJgNbwz0ASL60sxdlh07r95om5KiMbSGjP5Qd7YdqsHkuXH8y7+44GRMRak8I0GB88LLs0FPufhyw0Jm9YNQvqy2/PvqgRWnHM2ZY94wAQzPMqnw726axvnvJY7L8ouMBsK/EnMbncWekNHMhEVNGDESGb1z5p6GsrlSuCxTMQxYtW33l3iKlW34xAB3JZT5J0pxo74VETAm91eYNf+hiqh3WmXiIWVE6JfFxLh3M99hH+KKMWn+JwoFlp9JCT4mKMLE9U475Gf4wCTksn8hJyo6QhGHu0cEXczQiVuPG8sWd383Q2HBFOUbr/lb0k85wFuJkA15D1w8puv6blxf1QiKUx+uZdEXHqOhQlo8Dj59Vzm13OGRziC1/MzoV2UqNfzHzzeaSztu8n8eu4Uu57/A7ucrrvBa9VLAAAAAElFTkSuQmCC" sizes="32x32">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./track.css">
         <link rel="stylesheet" href="../Components/css.css">
         <style>
+            #main_navbar{
+                position: sticky;
+                top: 0px;
+            }
             #img_parent {
                 width: 80%;
                 margin: auto;
-                display: flex;
                 background-color: #412A4C;
+                padding: 30px;
+                border-radius: 20px;
+                margin-bottom: 50px;
+            }
+
+            #img_parent>div:first-child {
+                display: flex;
             }
 
             #container {
                 margin-top: 20px;
             }
-            #password_alert{
+
+            #password_alert {
                 display: none;
                 position: absolute;
                 background-color: white;
@@ -32,13 +44,114 @@
                 border-radius: 10px;
                 width: 200px;
                 height: 80px;
-                
+
             }
-            #password_alert p{
-                
+
+            #password_alert p {
+
                 color: black;
                 margin-bottom: 5px;
                 margin-top: -5px;
+            }
+
+            #heading2 {
+                color: #412A4C;
+                font-family: 'GT Haptik Medium', sans-serif;
+                font-weight: 400;
+                line-height: 1.25;
+                font-size: clamp(3rem * 0.6, 3vw, 3rem);
+                margin: 30px auto 45px;
+                max-width: 800px;
+                text-align: center;
+                z-index: 1
+            }
+
+            #button {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                margin-bottom: 50px;
+
+            }
+
+            #button>button:first-child {
+                background-color: #412A4C;
+
+            }
+
+            #button>button:first-child:hover {
+                background-color: #412A4C;
+
+            }
+
+            #button>button:first-child>em {
+                color: #FCE5D8;
+
+            }
+
+            #button>button {
+                background-color: #ffebbd;
+
+                padding: 15px 25px;
+                border-radius: 30px;
+                font-weight: bolder;
+
+            }
+
+            button p {
+                color: #412A4C;
+
+            }
+
+            #button>button:hover {
+                transform: rotate(2deg);
+                background-color: #f7d27d;
+            }
+
+            #second img {
+                width: 40.75rem;
+
+            }
+
+            #second_list {
+                padding: 20px;
+            }
+
+            #second_list>div>a:first-child {
+                background-color: #E57CD8;
+                width: 200px;
+                padding: 15px 35px;
+                color: white;
+                font-weight: bolder;
+                border: none;
+                margin-right: 20px;
+                border-radius: 30px;
+            }
+
+            #second_list>div>a:first-child:hover {
+                background-color: #564260;
+                color: #FFF;
+
+            }
+
+            #second_list li {
+                margin: 10px;
+                margin-left: 30px;
+                color: white;
+                line-height: 1.6;
+                list-style: none;
+            }
+            #second_list li:before {
+                    color: #E57CD8;
+                    margin-left: -30px;
+                    margin-bottom: -30px;
+                    font-size: 25px;
+                    content:"\2714\0020";
+                    
+                }
+
+            #second_list>div:last-child {
+                margin-top: 50px;
             }
         </style>
     </head>
@@ -57,7 +170,8 @@
                             <div> <input type="email" placeholder="Email"></div>
                             <div id="wrapper">
                                 <div id="password_alert">
-                                    <th class="thead"><p>Please make sure that your password includes:</p>
+                                    <th class="thead">
+                                        <p>Please make sure that your password includes:</p>
                                         <li id="policy-length">8 or more characters</li>
                                         <li id="policy-uppercase">lowercase and uppercase</li>
                                         <li id="policy-number">at least one number</li>
@@ -125,23 +239,34 @@
                     <img src="./brands-mixed-desktop-light.avif">
                 </div>
             </div>
-            <div>
+
+
+
+            <div id="second">
                 <div>
-                    <div class="Wrapper">
-                        <h2 color="#412A4C">Time tracking for all your
+                    <div class="Wrapper2">
+                        <h2 id="heading2">Time tracking for all your
                             productivity and profitability needs
                         </h2>
-                        <div>
+                        <div id="button">
                             <button class=""><em>Employee time tracking</em></button>
-                            <button>Billing & invoicing</button>
-                            <button>Project budgeting</button>
-                            <button>Reporting</button>
-                            <button>Payroll</button>
+                            <button>
+                                <p>Billing & invoicing</p>
+                            </button>
+                            <button>
+                                <p>Project budgeting</p>
+                            </button>
+                            <button>
+                                <p>Reporting</p>
+                            </button>
+                            <button>
+                                <p>Payroll</p>
+                            </button>
                         </div>
-                        <div>
-                            <div id="img_parent">
-                                <div>
-                                    <h3 color="#FFF3ED">Make timesheets history.</h3>
+                        <div id="img_parent">
+                            <div>
+                                <div id="second_list">
+                                    <h1 color="#FFF3ED">Make timesheets history.</h1>
                                     <ul>
                                         <li>Get the data you need without disrupting your team's workflow. Track's
                                             one-click
