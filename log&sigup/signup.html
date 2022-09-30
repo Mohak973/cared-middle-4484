@@ -9,11 +9,28 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <div id="log_div">
-       
-        <div id="login">
+    <div class="inside-first-div">
+        <img src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png" alt="">
+    </div>
+    <div class="inside-second-div" >
+        <div>
+            <h1 class="first-div-heading"> <span> Sign up for a <em>free</em> Toggl Track account</span></h1>
+            <p>All plans come with a free, 30-day trial of Toggl Track Premium—no credit card required.
+                <br>
+                Upgrade at the end of the trial or continue using Track for free forever.</p>
+                <div class="login-link">
+                    <p> Already have an account?<a href="LoginPage.html">Log in here</a>.</p>
+                </div>
+        </div>
+
+
+    <div id="signup_div">
+      
+
+
+        <div id="signup1">
             
-            <div id="loging_main">
+            <div id="signup_main">
                 <p id="wrong"></p>
                 <div id="login_bygoogle">
                     <div id="google">
@@ -31,11 +48,21 @@
                 </div>
              <label for="input">Email</label>
             <br>
+            <div id="show_info">
+                <div> Please make sure your password includes:</div>
+                <div>
+                   <ul>
+                    <li id="chacrcount"> 8 or more characters</li>
+                    <li id="charleter">Lowercase and upercase</li>
+                    <li id="char_number">at least one number</li>
+                   </ul>
+                </div>
+            </div>
     <input type="email" id="email" placeholder="Email">
     <p id="b_email"></p>
     <label for="">Password</label>
     <br>
-    <input type="password" placeholder="Password" id="password">
+    <input type="password" placeholder="Password" id="password" >
     <p id="b_password"></p>
    
     <button id="signup">Sign via email</button>

@@ -15,6 +15,7 @@ display: block;
 }
 
 #log_div{
+   
     width: 100%;
     height: 120vh;
    display: flex;
@@ -36,12 +37,13 @@ justify-content: center;
 align-items: center;
 }
 #login{
+   
     width: 45%;
     height: auto;
-    padding-bottom: 6vh;
-    margin: auto;
+    padding-bottom: 6vh; 
+    margin: auto; 
     position: absolute;
-    top: 45vh;
+     top: 48vh;
     left: 30%;
     background-color: rgb(44, 19, 56);
 z-index: 10;
@@ -82,6 +84,7 @@ input{
 
     margin-top: 55px;
 }
+
 button{
     margin-top: 30px;
     text-align: center;
@@ -179,6 +182,9 @@ margin-top: 30px;
     justify-content: center;
    
      }
+
+
+     
      .with_other{
 width: 32px;
 height: 27px;
