@@ -31,10 +31,10 @@ margin-bottom: -5px;
    filter: brightness(55%);
 }
 #div_a{
-    position:sticky;
-    top:-1px;
- display: flex;
- width:fit-content;
+    /* position:sticky; */
+     top:-1px;
+  display: flex; 
+ width:100%;
 
  
 }
@@ -90,12 +90,7 @@ a{
     font-size: 16px;
     font-weight: 400;
     min-width: 280px;
-    padding: 15px 35px;
-}
-#div_a{
-    position: sticky;
-    
-   
+    padding: 15px 17.5px;
 }
 #time_tracking{
     /*  /* IE 9 */
@@ -132,7 +127,7 @@ a{
        /* transform: skewY(5deg)  ;
     transform-origin: top left;    */
    
-  border: solid red;
+  
     display:grid;
     grid-template-columns: repeat(2,1fr);
     height:2000px;
@@ -164,7 +159,7 @@ img{
 }
 #track_1{
   
-    border: solid red;
+   
    margin-bottom: 20px;;
    
 }
