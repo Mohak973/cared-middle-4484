@@ -67,7 +67,33 @@ document.getElementById("password").addEventListener("blur",()=>{
 })
 
 
+document.getElementById("password").addEventListener("input",()=>{
 
+    let password_check=false;
+    let password = document.getElementById("password").value
+    if(password.length>8 ){
+     document.getElementById("policy-length").style.color="green"
+     if(/[A-Z]/.test(password) && /[a-z]/.test(password)){
+        document.getElementById("policy-uppercase").style.color="green"
+        if(/[0-9]/.test(password)){
+            document.getElementById("policy-number").style.color="green"
+            password_check=true;
+        }else{
+            document.getElementById("policy-number").style.color="red"
+        }
+     }
+     else{
+        document.getElementById("policy-uppercase").style.color="red"
+     }
+ 
+ 
+    }
+    else{
+        document.getElementById("policy-length").style.color="red"
+ 
+    }
+
+})
 
 
 

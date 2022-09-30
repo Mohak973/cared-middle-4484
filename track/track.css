@@ -265,7 +265,7 @@ input::placeholder {
     position: absolute;
     margin: 12.5rem 3.75rem;
     animation-name: Hand;
-    margin-left: 315px;
+    margin-left: 320px;
     animation-duration: 5s;
     animation-iteration-count: 1;
     display: none;
