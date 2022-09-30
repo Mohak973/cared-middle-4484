@@ -10,3 +10,69 @@
     margin-top: 5px;
     background: linear-gradient(rgb(44, 19, 56) 47%, rgb(107, 90, 116) 47%, rgb(107, 90, 116) 53%, rgb(44, 19, 56) 53%);
 }
+#show_info{
+    width: 230px;
+    height: 110px;
+    
+    margin: auto;
+    position: absolute;
+    top: 125px;
+    left: 150px;
+    background-color: white;
+   
+    border-radius: 10px;
+    padding-bottom:5px ;
+    display: none;
+}
+#show_info>div{
+    width: 90%;
+    height: auto;
+   padding-top:10px ;
+    margin: auto;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.397);
+  
+}ul{
+    margin-top: -2px;
+    margin-left: -22px;
+}ul>li{
+    color: rgba(0, 0, 0, 0.397);
+    font-size: small
+    ;
+    line-height: 20px;
+}
+
+
+.inside-first-div{
+    width: 10.789%;
+    height: auto;
+    cursor: pointer;
+    padding: 45px;
+  }
+  .inside-first-div img{
+    width: 100%;
+  }
+
+  #signup1{
+    width: 50%;
+
+    width: 45%;
+    height: auto;
+    padding-bottom: 6vh; 
+   
+    position: absolute;
+     top: 48vh;
+  
+    background-color: rgb(44, 19, 56);
+z-index: 10;
+box-shadow: 0 1px 4px rgb(28 28 28 / 10%), 0 4px 6px rgb(28 28 28 / 4%), 0 8px 16px rgb(28 28 28 / 4%), 0 10px 20px 2px rgb(28 28 28 / 2%), 0 12px 24px 4px rgb(28 28 28 / 4%)
+
+  }
+  #signup_main{
+    width: 90%;
+    margin: auto;
+    height: 80%;
+
+    margin-top: 55px;
+
+  }
