@@ -15,10 +15,15 @@ em {
     font-family: "GT Haptik Medium Rotalic", sans-serif;
 }
 
-h1 {
-    font-size: 46.8304px;
-    font-family: "GT Haptik Medium Rotalic", sans-serif;
+#form_parent>h1 {
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: clamp(4.5rem * 0.5, 4.2vw, 4.5rem);
     color: #FFF3ED;
+    margin-bottom: 25px;
+    text-align: left;
+    max-width: 850px;
 }
 
 #form {
@@ -86,7 +91,8 @@ input::placeholder {
     font-weight: bold;
 }
 
-span {
+                                
+#eye {
     position: absolute;
     color: rgba(128, 128, 128, 0.74);
     margin-left: 339px;
@@ -164,7 +170,7 @@ span {
 
 #Sign_up_btn {
     background-color: #E57CD8;
-    width: 200px;
+    width: 230px;
     padding: 15px 35px;
     color: white;
     font-weight: bolder;
@@ -236,6 +242,7 @@ span {
 #play {}
 
 .animation_text {
+    color: black;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -258,6 +265,7 @@ span {
     position: absolute;
     margin: 12.5rem 3.75rem;
     animation-name: Hand;
+    margin-left: 315px;
     animation-duration: 5s;
     animation-iteration-count: 1;
     display: none;
@@ -265,19 +273,23 @@ span {
 
 @keyframes Hand {
     0% {
-        top: 12.5rem;
+        top: 250px;
+        opacity: 0.3;   
     }
 
     25% {
-        top: 6.25rem;
+        top: 180px;
+        opacity: 1;
     }
 
     50% {
-        top: 6.25rem
+        top: 180px;
+        opacity: 1;
     }
 
     100% {
-        top: 9.375rem;
+        top: 250px;
+        opacity: 0.1;
     }
 
 }
@@ -299,3 +311,12 @@ span {
     text-align: right;
     margin-left: 3.125rem;
 }
+#tilt:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+
+
+/* 2nd parent div */
+
+

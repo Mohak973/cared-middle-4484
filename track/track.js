@@ -43,7 +43,6 @@ setTimeout(() => {
 function start() {
 
     sec++;
-    console.log(sec)
     if (sec == 60) {
         min++;
         sec = 0;
@@ -54,11 +53,20 @@ function start() {
         sec = 0;
     }
     document.getElementById("stop_watch").innerHTML = null
-    console.log(sec, min)
     document.getElementById("stop_watch").innerHTML = `${hr < 10 ? "0" + hr : hr}:${min < 10 ? "0" + min : min}:${sec < 10 ? "0" + sec : sec}`
 
 
 }
+
+
+document.getElementById("password").addEventListener("focus",()=>{
+    document.getElementById("password_alert").style.display="block"
+})
+document.getElementById("password").addEventListener("blur",()=>{
+    document.getElementById("password_alert").style.display="none"
+})
+
+
 
 
 
