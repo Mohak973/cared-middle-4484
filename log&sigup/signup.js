@@ -1,17 +1,68 @@
-let url="https://intense-atoll-23792.herokuapp.com/api/stor"
-let singnup=document.getElementById("signup")
-singnup.addEventListener("click",function(){
-    singnu_data()
-})
+const inp = document.getElementById('email');
+const AInput = document.getElementById("password");
 let show= document.getElementById("show_info")
-let  singnu_data=async ()=>{
-    let email=document.getElementById("email").value 
-    let password=document.getElementById("password").value
+inp.addEventListener('click', function onClick(event) {
+    event.preventDefault();
+  const input = document.getElementById('email');
 
-    let obj={
-        email,
-        password,
-    }
+
+    input.style.backgroundColor = "rgb(252, 229, 216)";
+    input.style.color = "black"
+
+});
+
+AInput.addEventListener("click",function onClick(event){
+    event.preventDefault();
+  const AInput = document.getElementById("password");
+    AInput.style.backgroundColor = 'rgb(252, 229, 216)';
+    AInput.style.color = "black"
+
+});
+
+
+
+
+
+let form = document.querySelector("form");
+
+
+// let signupArr  = JSON.parse(localStorage.getItem("btn")) || [];
+
+form.addEventListener("submit",function(event){
+  event.preventDefault();
+  let obj = {
+    email:form.email.value,
+    password:form.password.value,
+  }
+  console.log(obj)
+  
+  singnu_data(obj)
+  
+});
+
+
+let url="https://intense-atoll-23792.herokuapp.com/api/stor"
+
+
+
+let  singnu_data=async(obj)=>{
+  let pres;
+   let aout=await fetch (url)
+  aout=await aout.json()
+
+aout.forEach((ele) => {
+  if(ele.password==obj.password){
+    pres=true
+    return
+  }
+});
+
+if(pres){
+  alert("alred")
+}
+else{
+
+
 
     let res= await fetch(`${url}`,{
         method:"POST",
@@ -25,8 +76,11 @@ let  singnu_data=async ()=>{
     res=await res.json()
     console.log(res)
     alert(res.email)
-    show.style.display="none"
+   show.style.display="none"
+  }
 }
+
+
 
 document.getElementById("password").addEventListener("input", myFunction);
 let s1="abcdefghijklmnopqrstuvwxyz"
@@ -45,7 +99,7 @@ up[i+1]=s2[i]
 
 console.log(low,up)
 function myFunction() {
-   show.style.display="block"
+    show.style.display="block"
     let count=document.getElementById("char_number")
     
     let password=document.getElementById("password").value
@@ -88,3 +142,7 @@ show.addEventListener("click", hide)
 function hide(){
     show.style.display="none"
 }
+
+
+
+

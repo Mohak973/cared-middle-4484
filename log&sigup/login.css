@@ -13,7 +13,11 @@ display: block;
    font-size: 13px;
 
 }
-
+#lognav{
+width: auto;
+height: auto;
+border: 2px solid red;
+}
 #log_div{
    
     width: 100%;
@@ -32,7 +36,7 @@ display: block;
 background-repeat: no-repeat;
 background-size: 100%;
 
-display: flex;
+display: block;
 justify-content: center;
 align-items: center;
 }
@@ -136,7 +140,7 @@ svg{-webkit-text-size-adjust: 90%;
         border-top: 4px solid transparent;
         border-left: 7px solid white;
         border-bottom: 4px solid transparent;
-        margin-top: 17px;
+        margin-top: 5px;
         margin-left: 5px;
     }#SSO{
 display: flex;
@@ -160,7 +164,11 @@ margin-top: 30px;
        font-size: small; 
       }#for_signup{
         margin-bottom: 75px;
-
+width: 100%;
+display: flex;
+justify-content: center;
+margin-left: 5rem;
+margin-top: -10px;
       }
      #login_bygoogle{
         display: flex;
@@ -188,4 +196,11 @@ margin-top: 30px;
      .with_other{
 width: 32px;
 height: 27px;
+     }#by_signup{
+        font-size: 10px;
+        width: 85%;
      }
+
+
+    
+

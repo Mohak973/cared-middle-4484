@@ -45,13 +45,20 @@ let password=document.getElementById("password").value
     document.getElementById("b_password").innerText=""
   
  }
+let sucess
 
  let wrong=false
  let res=await fetch (`${url}`)
  res=await res.json()
 console.log(res)
  res.forEach((ele)=> {
-if(ele.email!=email||ele.password!=password){
+   if(ele.email==email&&ele.password==password){
+     sucess=true;
+     localStorage.setItem("tog_log",JSON.stringify(ele))
+      return;
+   }
+
+else if(ele.email!=email||ele.password!=password){
    wrong=true
    return;
 }else{
@@ -60,11 +67,18 @@ if(ele.email!=email||ele.password!=password){
     return
 }
  });
- if(wrong==true){
+ if(sucess==true){
+alert("yes")
+document.getElementById("wrong").innerText=""
+ }
+ else if(wrong==true){
     document.getElementById("wrong").innerText="The email/password combination used was not found on the system."
- }else{
-    document.getElementById("wrong").innerText=""
  }
  
 }
+
+import { navbar, footer } from '../Components/nav_footer.js'
+console.log(navbar())
+//document.getElementById("lognav").innerHTML=navbar()
+
 
