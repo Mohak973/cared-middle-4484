@@ -1,0 +1,43 @@
+#top{
+    display: flex;
+    justify-content: space-between;
+}
+#text{
+    width:40%;
+    display: flex;
+    justify-content: space-evenly;
+    color: grey;
+}
+#icon{
+    display: flex;
+    width: 60px;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+#icon>i{
+    color: grey;
+}
+#top>:first-child{
+    color: black;
+    font-weight: bold;
+}
+#middle{
+    display: flex;
+    width: 100%;
+    color: grey;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#middle div,p{
+    margin-right: 20px;
+}
+#middle div:hover{
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+i{
+    color: black;
+    margin-right: 3px;
+}
