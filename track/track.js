@@ -71,7 +71,7 @@ document.getElementById("password").addEventListener("input",()=>{
 
     let password_check=false;
     let password = document.getElementById("password").value
-    if(password.length>8 ){
+    if(password.length>=8 ){
      document.getElementById("policy-length").style.color="green"
      if(/[A-Z]/.test(password) && /[a-z]/.test(password)){
         document.getElementById("policy-uppercase").style.color="green"
