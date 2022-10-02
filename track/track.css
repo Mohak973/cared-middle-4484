@@ -181,6 +181,7 @@ input::placeholder {
 #Sign_up_btn:hover {
     background-color: #564260;
     color: #FFF;
+    transition: all .05s;
 }
 
 .google_btn:hover {
@@ -312,7 +313,9 @@ input::placeholder {
     margin-left: 3.125rem;
 }
 #tilt:hover{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+    box-shadow: 1px 0 1px -0.5px #f6eddc inset, -1.25px 0 0.5px -0.5px #9d9885 inset, 0 0 1px 2px #f7f5e8 inset, 0 10px 5px -5px rgb(34 33 28 / 45%), 0 10px 7px -3px rgb(40 36 33 / 25%);
 }
 
 
@@ -433,6 +436,7 @@ button p {
     border: none;
     margin-right: 20px;
     border-radius: 30px;
+    transition: 0.6s;
 }
 
 #second_list>div>a:first-child:hover {
