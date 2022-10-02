@@ -67,11 +67,12 @@ em {
 
 .end>a:hover {
     color: #E57CD8;
+    transition: 0.6s;
 }
 
 input {
     padding: .8125rem 1.25rem;
-    width: 65%;
+    width: 347px;
     border: .125rem solid #ABA0AF;
     caret-color: #2C1338;
     background-color: #2C1338;
@@ -119,6 +120,9 @@ input::placeholder {
 #log_form,
 #timer {
     margin-bottom: 30px;
+}
+#timer{
+    width: 500px;
 }
 
 #log_form>div {
@@ -181,12 +185,13 @@ input::placeholder {
 #Sign_up_btn:hover {
     background-color: #564260;
     color: #FFF;
-    transition: all .05s;
+    transition: 0.6s;
 }
 
 .google_btn:hover {
     background-color: #FCE5D8;
     color: black;
+    transition: 0.6s;
 
 }
 
@@ -205,7 +210,7 @@ input::placeholder {
 
 
 /*  Timet part */
-#timer>div:first-child {
+#tilt{
     color: black;
     background-color: #FFF;
     width: 65%;
@@ -215,7 +220,11 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
     border-radius: .9375rem;
-
+}
+#tilt>div{
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
 }
 
 #timer>div>div:nth-child(2) {
@@ -266,10 +275,10 @@ input::placeholder {
     position: absolute;
     margin: 12.5rem 3.75rem;
     animation-name: Hand;
-    margin-left: 320px;
+    margin-left: 100px;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    display: none;
+    display: block;
 }
 
 @keyframes Hand {
@@ -289,7 +298,7 @@ input::placeholder {
     }
 
     100% {
-        top: 250px;
+        top: 240px;
         opacity: 0.1;
     }
 
@@ -298,8 +307,31 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     display: none;
+    animation: timer_p;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
+@keyframes timer_p{
+    0% {
 
+        opacity: 0.1;   
+    }
+
+    25% {
+
+        opacity: 0.3;
+    }
+
+    50% {
+
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
 #timer_p>h4 {
     max-width: 60%;
     opacity: 1;
@@ -379,7 +411,8 @@ input::placeholder {
 #button {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 35px;
+    margin-left: -10px;
     margin-bottom: 50px;
 
 }
@@ -391,6 +424,7 @@ input::placeholder {
 
 #button>button:first-child:hover {
     background-color: #412A4C;
+    transition: 0.6s;
 
 }
 
@@ -416,6 +450,7 @@ button p {
 #button>button:hover {
     transform: rotate(2deg);
     background-color: #f7d27d;
+    transition: 0.6s;
 }
 
 #second img {
@@ -442,6 +477,7 @@ button p {
 #second_list>div>a:first-child:hover {
     background-color: #564260;
     color: #FFF;
+    transition: 0.6s;
 
 }
 

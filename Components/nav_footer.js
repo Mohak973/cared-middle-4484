@@ -1,4 +1,5 @@
-let navbar=()=>`<header class="header1">
+let navbar=()=>
+`<header class="header1">
 <div id="navbar1">
     <div class="underNavbar1">
         <a class="un1-child-1" href="">Back To Toggl Global</a>
@@ -9,50 +10,52 @@ let navbar=()=>`<header class="header1">
         <a class="un1-child-5" href="">Working at Toggl</a>
     </div>
 </div>
-<nav id="main_navbar" class="navbar2">
-    <div class="underNavbar2">
-        <div class="logo"><img
-                src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png"
-                alt=""></div>
-        <button>
-        <span><a href="../index.html">Products</a></span>
-            <div class="belowinsider">
-                <div class="insider"></div>
-            </div>
-        </button>
-        <a id="pricing" href="">Pricing</a>
-        <button>
-        <span><a href="../workingATToggl(jitesh)/index.html">Why Track?</a></span>
-            <div class="belowinsider">
-                <div class="insider"></div>
-            </div>
-        </button>
-        <button>
-            <span>Careers</span>
-            <div class="belowinsider">
-                <div class="insider"></div>
-            </div>
-        </button>
-    </div>
-    <div id="underNavbar2-rightnav" style="float:right;">
-        <div class="inside-rightnav" style="display: flex;">
-            <button>
-                <span>Book a demo</span>
-                <span style="padding-left: 20px;">|</span>
-            </button>
-            <button class="LoginBtn">
-                <span style="padding-left: 20px;">Log in</span>
-            </button>
-            <div class="tryforfreeBtn" style="padding-left: 10px;">
-                <button>
-                    <a style="color:rgb(229, 124, 216)" href="Signup.html">Try for free</a>
-                </button>
-            </div>
-        </div>
-
-    </div>
-</nav>
 </header>`
+
+let navbar2=()=>
+`<nav id="main_navbar" class="navbar2">
+<div class="underNavbar2">
+    <div class="logo"><img
+            src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png"
+            alt=""></div>
+    <button>
+    <span><a href="../index.html">Products</a></span>
+        <div class="belowinsider">
+            <div class="insider"></div>
+        </div>
+    </button>
+    <a id="pricing" href="">Pricing</a>
+    <button>
+    <span><a href="../workingATToggl(jitesh)/index.html">Why Track?</a></span>
+        <div class="belowinsider">
+            <div class="insider"></div>
+        </div>
+    </button>
+    <button>
+        <span>Careers</span>
+        <div class="belowinsider">
+            <div class="insider"></div>
+        </div>
+    </button>
+</div>
+<div id="underNavbar2-rightnav" style="float:right;">
+    <div class="inside-rightnav" style="display: flex;">
+        <button>
+            <span>Book a demo</span>
+            <span style="padding-left: 20px;">|</span>
+        </button>
+        <button class="LoginBtn">
+            <a href="../log&Signup/login.htnl"><span style="padding-left: 20px;">Log in</span></a>
+        </button>
+        <div class="tryforfreeBtn" style="padding-left: 10px;">
+            <button>
+                <a style="color:rgb(229, 124, 216)" href="Signup.html">Try for free</a>
+            </button>
+        </div>
+    </div>
+
+</div>
+</nav>`
 
 
 
@@ -171,4 +174,4 @@ let footer =()=> `<footer class="footer1-div1">
 </footer>`
 
 
-export{navbar,footer}
+export{navbar,navbar2,footer}

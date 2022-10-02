@@ -31,7 +31,7 @@ setTimeout(() => {
         setTimeout(() => {
             document.getElementById("hand").style.display = "none";
             document.getElementById("timer_p").style.display = "block";
-        }, 2000)
+        }, 1700)
     }, 1000)
 }, 2000)
 
