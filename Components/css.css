@@ -62,7 +62,7 @@
     }
   }
   
-  @media (min-width: 800px) {
+  @media (min-width: 300px) {
     .child2-insider{
       display: flex;
       flex-wrap: wrap;

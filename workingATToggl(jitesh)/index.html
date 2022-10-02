@@ -7,16 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../Components/css.css">
     </head>
     <body> 
+        <div id="navbar"></div>
         <div id="firstbox">
-            <h1>Make cool stuff.</h1>
-            <div>
-                <h1>Form</h1>
-                <h1 class="tilted">anywhere.</h1>
-            </div>
-            <h3>Fully remote since 2014</h3>
-            <button>See job openings</button>
+            <h1>Make cool stuff.</h1><br>
+            <h1>Form anywhere.</h1>
+            <h3>Fully remote since 2014</h3><br>
+            <button style="padding-left: 60px; margin-left: 123px;">See job openings</button>
         </div>
         <div style="background-color:#2C1338">
             <div id="boxsecond">
@@ -323,5 +322,14 @@
                 </div>
             </div>
         </div>
+        <div id="footer"></div>
     </body>
 </html>
+<script type="module">
+import { navbar ,footer } from "../Components/nav_footer.js";
+
+// console.log(navbar())
+ document.getElementById("navbar").innerHTML=navbar()
+
+ document.getElementById("footer").innerHTML=footer();
+</script>

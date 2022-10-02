@@ -15,14 +15,14 @@ let navbar=()=>`<header class="header1">
                 src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png"
                 alt=""></div>
         <button>
-            <span>Products</span>
+        <span><a href="../index.html">Products</a></span>
             <div class="belowinsider">
                 <div class="insider"></div>
             </div>
         </button>
         <a id="pricing" href="">Pricing</a>
         <button>
-            <span>Why Track?</span>
+        <span><a href="../workingATToggl(jitesh)/index.html">Why Track?</a></span>
             <div class="belowinsider">
                 <div class="insider"></div>
             </div>
