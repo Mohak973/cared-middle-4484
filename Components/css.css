@@ -303,11 +303,11 @@
     animation: 300ms ease-in-out 0s 1 normal none running animation-1wcrnca;
   }
   
-  p, h1, h2, h3, h4, h5 {
+  /* p, h1, h2, h3, h4, h5 {
     margin: 0;
     color: #FCE5D8;
   }
-  
+   */
   .backimage-div {
     position: relative;
     min-height: 136px;
