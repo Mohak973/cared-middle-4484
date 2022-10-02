@@ -5,9 +5,11 @@ body{
 }
         #firstbox{
             text-align: center;
+            padding-left: 400px;
+            /* padding-top: 100px; */
             background-color: #2C1338;
             color: white;
-            padding: 50px 10px;
+            /* padding: 50px 10px; */
             font-family: 'Inter', sans-serif;
             rotate:  0deg ;
             /* margin-top: 95px; */
@@ -15,9 +17,9 @@ body{
             height: 300px;
             /* margin-left: 15px; */
         }
-        #firstbox>h1,h3{
+        /* #firstbox>h1,h3{
             rotate: 0deg;
-        }
+        } */
         #firstbox>div{
             width: 20%;
             display: flex;

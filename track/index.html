@@ -12,7 +12,44 @@
         <link rel="stylesheet" href="./track.css">
         <link rel="stylesheet" href="../Components/css.css">
         <style>
-            
+            .grid_box {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: auto;
+                margin-top: 50px;
+                justify-content: center;
+                width: 80%;
+                gap: 1.9rem;
+
+            }
+
+            .grid_box>div {
+                padding: 25px;
+                border-radius: 10px;
+                height: 500px;
+            }
+
+            .grid_box img {
+                width: 100%;
+            }
+
+            #third {
+                background-color: rgb(44, 19, 56);
+                padding-top: 100px;
+
+            }
+
+            #third>h1 {
+                text-align: center;
+                color: #FFF3ED;
+                font-size: 36px;
+
+            }
+
+            #second_list>h1 {
+                color: #FFF3ED;
+            }
         </style>
     </head>
 
@@ -126,7 +163,7 @@
                         <div id="img_parent">
                             <div>
                                 <div id="second_list">
-                                    <h1 color="#FFF3ED">Make timesheets history.</h1>
+                                    <h1 id="timesheets">Make timesheets history.</h1>
                                     <ul>
                                         <li>Get the data you need without disrupting your team's workflow. Track's
                                             one-click
@@ -151,6 +188,68 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+
+            <div id="third">
+                <h1>Why do teams love Toggl Track?</h1>
+
+                <div class="grid_box">
+
+                    <div style="background-color: #f7d8f3;">
+
+                        <h4>Users report up to 25% increase in
+                            billable hours with accurate time tracking that accounts for every minute spent on
+                            client work.
+                            <!-- --><a href="#">Learn more</a>
+                        </h4>
+                        <img src="./feature-increasebillables.avif" alt="">
+                        
+
+                    </div>
+                    <div style="background-color: #FCE5D8;">
+                        <h4>Speed up team adoption with an anti-surveillance platform that gets a "yes" from every
+                            employee.
+                            <!-- --><a href="#">Learn more</a>
+                        </h4>
+                        <img src="./feature-trustemployee.avif" alt="">
+                        <div class="css-4tj34t-MiniCTA et001ls22"><p color="#6B5A74" class="css-1bl7hqx-P2 e6bq8xs6">Toggl Track stands against surveillance.</p><a href="#">Read about it here</a></div>
+                    </div>
+                    <div style="background-color: #FCE5D8;">
+                        <h4>No training necessary. Get started right away with intuitive and welcoming features.
+                            <!-- --><a href="#">Learn more</a>
+                        </h4>
+                        <img src="./feature-intuitive.avif" alt="">
+                        <div>
+                            <p ><strong >“The acceptance from all users is very high. I
+                                    have seen a 40+ year employee move from their Excel-based tracking they have used
+                                    forever, to this tool without any issue.”</strong></p>
+                            <div ><img src="star.svg">5/5 stars on G2.com
+                                <!-- -->
+                            </div>
+                            <p>— Chris B, Systems Application Lead in an
+                                enterprise team</p>
+                        </div>
+                    </div>
+                    <div style="background-color: #FFF2D3;">
+                        <h4>Make time tracking and reporting a breeze with a beautifully-designed app experience.
+                            <!-- --><a href="#">Learn more</a>
+                        </h4>
+                        <img src="./feature-onetrack.avif" alt="">
+                        <div>
+                            <p ><strong >“The acceptance from all users is very high. I
+                                    have seen a 40+ year employee move from their Excel-based tracking they have used
+                                    forever, to this tool without any issue.”</strong></p>
+                            <div ><img src="star.svg">5/5 stars on G2.com
+                                <!-- -->
+                            </div>
+                            <p>— Chris B, Systems Application Lead in an
+                                enterprise team</p>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
 
             </div>
         </div>

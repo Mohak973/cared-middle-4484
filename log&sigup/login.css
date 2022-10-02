@@ -42,11 +42,12 @@ display: block;
 /* justify-content: center;
 ali#gn-items: center; */
 }#login_footer>div{
-    border: 2px solid red;
+   
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-left: 90px;
 }
 #login{
   
@@ -57,7 +58,7 @@ ali#gn-items: center; */
     position: absolute;
      top: 40vh;
     left: 30%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     background-color: rgb(44, 19, 56);
 z-index: 10;
 box-shadow: 0 1px 4px rgb(28 28 28 / 10%), 0 4px 6px rgb(28 28 28 / 4%), 0 8px 16px rgb(28 28 28 / 4%), 0 10px 20px 2px rgb(28 28 28 / 2%), 0 12px 24px 4px rgb(28 28 28 / 4%)
@@ -85,7 +86,7 @@ body {
 }
 input{
     width: 99%;
-    height: 30px;
+    height: 50px;
     border: 2px solid rgb(171, 160, 175);
     border: none;
     background: rgb(252, 229, 216);
@@ -178,8 +179,8 @@ margin-top: 30px;
 width: 100%;
 display: flex;
 justify-content: center;
-margin-left: 5rem;
-margin-top: -8000px;
+margin-left: 10rem;
+/* margin-top: -800px; */
       }
      #login_bygoogle{
         display: flex;
