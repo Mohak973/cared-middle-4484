@@ -5,9 +5,14 @@ body{
     /* background-color: rgb(44, 19, 56); ; */
 }
 #top_container{
+
 position: relative;
 text-align: center;
-margin-bottom: -5px;
+
+margin-top: 20px;
+height: 50%;
+
+
 }
 #top_container>h1{
    position: absolute;
@@ -15,27 +20,29 @@ margin-bottom: -5px;
     left:19%;
    font-family: "GT Haptik Medium", sans-serif;;
    font-size:54px ;
-   color: #fce5d8;
+   color:#FCE5D8;
    font-weight: 400;
    line-height: 54px;
    max-width: 700px;
+   
 }
 #top_container>h1>em{
    color: #e57cd8;
 }
 #top_container>img{
+  
    width:100%;
-   height:500px;
-   filter: contrast(20%);
-   filter: drop-shadow(10%);
-   filter: brightness(55%);
+   height:auto;
+   
+  
 }
 #div_a{
+    
      position:sticky; 
-     top:-1px;
+     top:-5px;
   display: flex; 
  width:100%;
-
+margin-top: 0px;
  
 }
 #a1{
@@ -46,7 +53,13 @@ margin-bottom: -5px;
     -webkit-box-pack: center;
     justify-content: center;
     cursor: default;
-   
+    text-decoration: none;;
+    color: #FFF3ED;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 280px;
+    padding: 15px 17.5px;
     
 }
  
@@ -59,7 +72,14 @@ margin-bottom: -5px;
     justify-content: center;
     cursor: default;
     color: #2c1338;
-    border-right: 1px solid rgba(86,66,96,0.1)
+    border-right: 1px solid rgba(86,66,96,0.1);
+    text-decoration: none;;
+   
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 280px;
+    padding: 15px 17.5px;
 }
 #a3{
     background-color: #fff3ed;
@@ -70,7 +90,14 @@ margin-bottom: -5px;
     justify-content: center;
     cursor: default;
     color: #2c1338;
-    border-right: 1px solid rgba(86,66,96,0.1)
+    border-right: 1px solid rgba(86,66,96,0.1);
+    text-decoration: none;;
+   
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 280px;
+    padding: 15px 17.5px;
 }
 #a4{
     background-color: #fff3ed;
@@ -81,9 +108,16 @@ margin-bottom: -5px;
     justify-content: center;
     cursor: default;
     color: #2c1338;
-    border-right: 1px solid rgba(86,66,96,0.1)
+    border-right: 1px solid rgba(86,66,96,0.1);
+    text-decoration: none;;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 280px;
+    padding: 15px 17.5px;
 }
-a{
+/* a{
     text-decoration: none;;
     color: #FFF3ED;
     font-family: 'Inter', sans-serif;
@@ -91,7 +125,7 @@ a{
     font-weight: 400;
     min-width: 280px;
     padding: 15px 17.5px;
-}
+} */
 #time_tracking{
     /*  /* IE 9 */
     
@@ -385,15 +419,18 @@ padding-top: 150px;
   
 }
 #last{
-    width:100%;
-   display: flex;
+    width:fit-content;
+   display: flex; 
     background-color:#2C1338;
-    text-align: center;
-    
+    padding-left: 100px; 
+
+   
+
 }
 
+
 #last_1{
-    border:solid red;
+  
     flex-direction: row;
     background-color: #412A4C;;
     margin-top: 200px;
@@ -409,11 +446,14 @@ padding-top: 150px;
     font-weight: 400;
     line-height: 48px;
     margin-left: 100px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 #last_1>div:nth-child(1){
-    border: solid yellow;
+   
     text-align: left;
     padding-right: 50px;
+    margin-bottom: 40px;
 }
 #last_1>div:nth-child(1)>p{
     font-size: 16px;
@@ -422,7 +462,46 @@ padding-top: 150px;
     font-weight: 400;
     line-height: 24px;
     max-width: 400px;
-    margin-left: 100px;
+    margin-left: 50px;
+}
+#last_1>div:nth-child(1)>div>button{
+    margin-right: 20px;
+    padding-left: 10px;
+    margin-top: 30px;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+#btn_g{
+    font-family: "GT Haptik Medium", sans-serif;
+  font-size: smaller;
+  background: white;
+  border: none;
+  color: rgb(44, 19, 56);
+  width: 286px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 52px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+#btn_a{
+    font-family: "GT Haptik Medium", sans-serif;
+    font-size: smaller;
+    background: white;
+    border: none;
+    color: rgb(44, 19, 56);
+    /* width: 216px; */
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 52px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+#btn_a>svg{
+    width: 40px;
 }
 #last_1>div:nth-child(2)>button{
     border-radius: 25px;
@@ -430,48 +509,57 @@ padding-top: 150px;
     margin-right: -15px;
 
 }
-#last_1>div>button>img{
-    width:7%;
+#last_1>div:nth-child(2)>p{
+    max-width: 450px;
+    margin-left: 50px;
+}
+#last_1>div>button>svg{
+    width:40px;
    
 }
 #last_1>div>div{
     display: flex;
-    border: solid blue;
+   
     margin-left: 50px;
 }
 #last_1>div>div>button>img{
-    border:solid red;
+   
     width:15%;
     position: relative;;
     overflow: hidden;
 }
-#last_1>div>div>button:nth-child(1){
+/* #last_1>div>div>button:nth-child(1){
     border-radius: 25px;;
     -webkit-box-pack: center;
     justify-content: center;
     align-items: center;
     height: 52px;
-   
-    width: 80%;
+}  */
+#btn_m{
+    font-family: "GT Haptik Medium", sans-serif;
+    font-size: smaller;
+    background: white;
     border: none;
-    text-transform: none;
-    margin-right: 10px;
-}
-#last_1>div>div>button:nth-child(2){
-    border-radius: 25px;;
-    -webkit-box-pack: center;
-    justify-content: center;
+    color: rgb(44, 19, 56);
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
     align-items: center;
     height: 52px;
-    width: 80%;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 55px;
+    padding-left: 130px;
+    margin-bottom: 60px;
 }
 #last_2{
-    border:solid yellow;
+    
     background-color: #FCE5D8;;
    width:50%;
    
    margin-top: 300px;;
    margin-right: 180px;;
+   height:470px;
 }
 #last_2>h3{
 font-size: 32px;
@@ -479,6 +567,9 @@ font-family: "GT Haptik Medium", sans-serif;;
 font-weight: 400;
 line-height: 42px;;
 color:#2c1338;
+margin-top: 40px;
+margin-bottom: 30px;
+margin-left: 50px;
 }
 #last_2>p{
     font-size: 16px;
@@ -502,5 +593,6 @@ color:#2c1338;
     transition: background-color 150ms linear,color 150ms linear;
     background-color: #E57CD8;
     color: #FFF;
+    margin-left: 50px;
   
 }

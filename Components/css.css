@@ -1,13 +1,18 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
-  }
+  } */
+
+ 
+  
   
   #underNavbar2-rightnav {
+  
     display: inline-block;
     text-align: center;
     margin-top: 57px;
-    padding: 0px 37px;
+   
+    padding: 0px 15px;
     transform: translateY(-240%);
   
   }
@@ -15,7 +20,7 @@
   .tryforfreeBtn button {
     font-family: "GT Haptik Medium", sans-serif;
     font-size: 1.1rem;
-    padding: 14px 35px;
+    padding: 14px 15px;
     -webkit-box-align: center;
     align-items: center;
     border-radius: 26px;
