@@ -75,7 +75,7 @@ else{
 
     res=await res.json()
     console.log(res)
-    alert(res.email)
+    window.location.href="login.html"
    show.style.display="none"
   }
 }
@@ -138,10 +138,12 @@ document.getElementById("charleter").style.color="green"
  console.log(lowleter,upleter)
 }
 
-show.addEventListener("click", hide)
+document.getElementById("password").addEventListener("blur",hide)
 function hide(){
+  
     show.style.display="none"
 }
+
 
 
 
