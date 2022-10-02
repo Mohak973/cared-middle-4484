@@ -28,6 +28,9 @@
                 padding: 25px;
                 border-radius: 10px;
                 height: 500px;
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
             }
 
             .grid_box img {
@@ -55,6 +58,7 @@
 
     <body>
         <header></header>
+        <nav></nav>
         <div id="container">
             <div id="form_parent">
                 <h1 id="heading">Simple time tracking to save <br> you <em>time</em> and <em>money</em>.</h1>
@@ -101,25 +105,29 @@
 
 
                     <div id="timer">
-                        <div id="tilt" data-tilt data-tilt-max="20" data-tilt-speed="100" data-tilt-perspective="1000">
-                            <div>
-                                <p class="animation_text">
-                                    Stand-up meeting
+                        <div id="tilt_parent">
+                            <div id="tilt" data-tilt>
+                                <div>
+                                    <p class="animation_text">
+                                        Stand-up meeting
 
-                                </p>
-                            </div>
-                            <div>
-                                <div id="stop_watch">00:00:00</div>
-                                <div id="icon">
-                                    <i class="fa fa-play-circle" id="play"></i>
-                                    <i class="fa fa-stop-circle" id="stop"></i>
+                                    </p>
                                 </div>
+                                <div>
+                                    <div id="stop_watch">00:00:00</div>
+                                    <div id="icon">
+                                        <i class="fa fa-play-circle" id="play"></i>
+                                        <i class="fa fa-stop-circle" id="stop"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <img id="hand" src="./track/toggl-hand.png" alt="">
                             </div>
 
                         </div>
-                        <div>
-                            <img id="hand" src="./track/toggl-hand.png" alt="">
-                        </div>
+
                         <div id="timer_p">
                             <h4>
                                 “I love the ease of just clocking in and out with <em> just one click!</em>”
@@ -180,7 +188,7 @@
                                     <div>
                                         <img style="object-fit: contain; opacity: 1;"
                                             sizes="(min-width: 759px) 759px, 100vw"
-                                            src="employee-time-tracking-short.png">
+                                            src="./track/employee-time-tracking-short.png">
 
                                     </div>
                                 </div>
@@ -205,7 +213,7 @@
                             <!-- --><a href="#">Learn more</a>
                         </h4>
                         <img src="./track/feature-increasebillables.avif" alt="">
-                        
+
 
                     </div>
                     <div style="background-color: #FCE5D8;">
@@ -214,7 +222,10 @@
                             <!-- --><a href="#">Learn more</a>
                         </h4>
                         <img src="./track//feature-trustemployee.avif" alt="">
-                        <div class="css-4tj34t-MiniCTA et001ls22"><p color="#6B5A74" class="css-1bl7hqx-P2 e6bq8xs6">Toggl Track stands against surveillance.</p><a href="#">Read about it here</a></div>
+                        <div class="css-4tj34t-MiniCTA et001ls22">
+                            <p color="#6B5A74" class="css-1bl7hqx-P2 e6bq8xs6">Toggl Track stands against surveillance.
+                            </p><a href="#">Read about it here</a>
+                        </div>
                     </div>
                     <div style="background-color: #FCE5D8;">
                         <h4>No training necessary. Get started right away with intuitive and welcoming features.
@@ -222,10 +233,10 @@
                         </h4>
                         <img src="./track/feature-intuitive.avif" alt="">
                         <div>
-                            <p ><strong >“The acceptance from all users is very high. I
+                            <p><strong>“The acceptance from all users is very high. I
                                     have seen a 40+ year employee move from their Excel-based tracking they have used
                                     forever, to this tool without any issue.”</strong></p>
-                            <div ><img src="./track/star.svg">5/5 stars on G2.com
+                            <div><img style="width: 30%;" src="./track/star.svg">5/5 stars on G2.com
                                 <!-- -->
                             </div>
                             <p>— Chris B, Systems Application Lead in an
@@ -238,10 +249,10 @@
                         </h4>
                         <img src="./track//feature-onetrack.avif" alt="">
                         <div>
-                            <p ><strong >“The acceptance from all users is very high. I
+                            <p><strong>“The acceptance from all users is very high. I
                                     have seen a 40+ year employee move from their Excel-based tracking they have used
                                     forever, to this tool without any issue.”</strong></p>
-                            <div ><img src="./track/star.svg">5/5 stars on G2.com
+                            <div><img style="width: 30%;" src="./track/star.svg">5/5 stars on G2.com
                                 <!-- -->
                             </div>
                             <p>— Chris B, Systems Application Lead in an
@@ -265,9 +276,11 @@
 
 
 <script type="module">
-    import { navbar, footer } from './Components/nav_footer.js'
+    import { navbar, navbar2, footer } from './Components/nav_footer.js'
     document.querySelector("header").innerHTML = navbar();
     document.querySelector("footer").innerHTML = footer();
+    document.querySelector("nav").innerHTML = navbar2();
+
 </script>
 <!-- Load vanilla-tilt first -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
