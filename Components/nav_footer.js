@@ -41,7 +41,7 @@ let navbar=()=>`<header class="header1">
                 <span style="padding-left: 20px;">|</span>
             </button>
             <button class="LoginBtn">
-                <span style="padding-left: 20px;">Log in</span>
+                <span  style="padding-left: 20px;"> <a href="../log&sigup/login.html"> Log in</span>
             </button>
             <div class="tryforfreeBtn" style="padding-left: 10px;">
                 <button>
