@@ -55,6 +55,7 @@ console.log(res)
    if(ele.email==email&&ele.password==password){
      sucess=true;
      localStorage.setItem("tog_log",JSON.stringify(ele))
+     
       return;
    }
 
@@ -68,8 +69,9 @@ else if(ele.email!=email||ele.password!=password){
 }
  });
  if(sucess==true){
-alert("yes")
+
 document.getElementById("wrong").innerText=""
+window.location.href="../landPage/HTML/timer.html"
  }
  else if(wrong==true){
     document.getElementById("wrong").innerText="The email/password combination used was not found on the system."
@@ -79,6 +81,11 @@ document.getElementById("wrong").innerText=""
 
 import { navbar, footer } from '../Components/nav_footer.js'
 console.log(navbar())
+document.getElementById("footer1").innerHTML=footer()
+
+
 //document.getElementById("lognav").innerHTML=navbar()
-
-
+document.getElementById("by_signup").addEventListener("click",myFunction11)
+function myFunction11(){
+window.location.href="signup.html"
+}

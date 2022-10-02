@@ -1,0 +1,179 @@
+.nav__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-property: width;
+    color: white;
+    background-color: #2C1338;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav__container__notification1 {
+    position: absolute;
+    right: 10px;
+    top: 33px;
+}
+
+.nav__container__logo,
+.nav__container__scroll,
+.nav__container__workspace {
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.nav__container a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.nav__container i {
+    width: 20px;
+    height: 20px;
+}
+
+.nav__container__category,
+.nav__container__workspace {
+    font-size: 10px;
+    color: #827188;
+}
+
+.nav__container__logo {
+    width: 100px;
+    height: 50px;
+    background-image: url("../IMAGES/toggl-track-nav-logo.png");
+    background-size: cover;
+}
+
+.fas {
+    font-size: 16px;
+}
+
+.nav__container__logo>div:nth-child(2) {
+    padding: 20px;
+}
+
+.nav__container__scroll {
+    overflow: scroll;
+    font-size: 13px;
+    height: 65%;
+}
+
+.nav__container__scroll::-webkit-scrollbar {
+    width: 2px;
+}
+
+.nav__container__scroll::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.nav__container__scroll__analyze>div:nth-child(n),
+.nav__container__scroll__manage>div:nth-child(n) {
+    margin: 15px 0;
+}
+
+.nav__container__scroll__show-more {
+    display: none;
+}
+
+.nav__container__scroll__show-more>div:nth-child(n) {
+    margin-bottom: 10px;
+    color: #827188;
+}
+
+.nav__container__scroll__show-more>div:nth-child(n):hover,
+.nav__container__scroll__show-more__manage:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/* .nav__container__workspace {
+    height: 150px;
+    width: 150px;
+    position: sticky;
+    bottom: 0px;
+} */
+
+.nav__container__flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__container__category1>div:nth-child(n) {
+    display: none;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 900px) {
+    .nav__container {
+        width: 55px;
+    }
+    body>div:nth-child(2) {
+        margin-left: 55px;
+    }
+    .nav__container__flexbox>div {
+        display: none;
+    }
+    .nav__container__logo {
+        width: 24px;
+        height: 24px;
+        background-image: url("../IMAGES/Toggl_(service)_Logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .nav__container__scroll,
+    .nav__container__workspace {
+        margin-left: 19px;
+        margin-right: 5px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .nav__container__category {
+        width: 100%;
+        height: 0;
+        border-top: 1px#827188 solid;
+        margin-bottom: 15px;
+    }
+    .nav__container__category span,
+    .nav__container__category1 span,
+    .nav__container__notification1 {
+        display: none;
+    }
+    .nav__container__category1>div:nth-child(n) {
+        display: block;
+        margin: 10px 0;
+        width: 20px;
+    }
+    .nav__container__workspace {
+        height: 150px;
+        width: 20px;
+        position: sticky;
+        bottom: 0px;
+    }
+    /* nav {
+        background-color: white;
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        box-shadow: 0px 2px 10px 0px gray;
+        padding: 5px;
+        padding-bottom: 20px;
+        min-width: 50%;
+    } */
+    .timer__middle,
+    .timer__arrows {
+        display: none;
+    }
+}

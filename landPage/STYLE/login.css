@@ -1,0 +1,128 @@
+body{
+    margin:0px;
+    overflow-y: scroll;
+}
+.login__background{
+    line-height: 1.15;
+    font-size: 16px;
+    background: linear-gradient(rgb(85, 10, 226),#412A4C); 
+    display: flex;
+    min-height: 112vh;
+    position: relative;
+    height: auto;
+}
+
+
+.login__background_top{
+    line-height: 1.15;
+    font-size: 16px;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://public-assets.toggl.com/b/static/hero-laptops-3c231f681ed97bbd33863500dc9cc7dd.jpg);
+
+}
+.login__background_top>p{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+.login__background_top>p:nth-of-type(2){
+    font-size: 20px;
+
+}
+
+.login__background_bottom{
+    line-height: 1.15;
+    font-size: 16px;
+    background-color: #412A4C;
+    height: 100vh;
+}
+
+.login__data{
+    background-color: #310844;
+    width: 680px;
+    height: 500px;
+    position:sticky;
+    top: 350px;
+    left: 423px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.login__data>div:nth-of-type(1){
+    width: 100%;
+    display: flex;
+    height: 100px;
+}
+.login__data>div:nth-of-type(1)>div{
+    background-color: white;
+    height: 30px;
+    width: 300px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 50px 30px 0px 20px;
+    padding-top: 15px;
+    font-size: 18px;
+}
+.login__data>div:nth-of-type(1)>div>img{
+    height: 15px;
+    width: 15px;
+}
+.login__data>div:nth-of-type(1)>div>a{
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.login__data>div:nth-of-type(1)>div:hover{
+    background-color: rgb(253, 222, 227);
+}
+
+.login__input{
+    width: 100%;
+    margin: -10px 50px 20px 50px;
+
+}
+.login__input>p{
+    font-size: 20px;
+    color:rgb(245, 225, 208) ;
+    margin: 20px 0px 5px 0px;
+    font-family: sans-serif;
+}
+
+.login__input>input{
+    background-color:rgb(245, 225, 208) ;
+    padding:10px;
+    width: 95%;
+    margin: 0px auto;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.login__btn{
+    background: linear-gradient(rgb(243, 137, 217), rgb(207, 107, 199)); 
+    width: 89%;
+    color: white;
+    text-align: center;
+    height: 40px;
+    margin: 0px auto;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.login__btn>p{
+    margin: 10px 0px;
+    font-family: sans-serif;
+}
+.login__btn:hover{
+    background-color: rgb(78, 70, 78);
+}
+
+

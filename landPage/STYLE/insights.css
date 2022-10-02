@@ -1,0 +1,55 @@
+body{
+    margin:0px;
+    min-width: 850px;
+    background-color: #FAFBFC;
+}
+.insights__container{
+    margin-left: 180px;
+}
+.insights__content{
+    text-align: center;
+    width:360px;
+    margin:10% auto;
+    font-family: 'Roboto', sans-serif;
+}
+.insights__content img{
+    margin: 20px;
+}
+.font14{
+    font-size: 14px;
+}
+.font24{
+    font-size: 24px;
+    line-height: 50px;
+}
+.weight300{
+    font-weight:300;
+}
+.colgrey{
+    color: #6f6f6f;
+    line-height: 21px;
+}
+.colpurple{
+    color:#2c1338;
+    line-height: 40px;
+}
+.insights__content__btn{
+    width:100%;
+    height:35px;
+    border:none;
+    outline:none;
+    background-color: #e57cd8;
+    color:white;
+    font-size: 14px;
+    border-radius:8px;
+    margin:30px 0;
+}
+.insights__content__btn:hover{
+    background-color: #dd6fd1;
+}
+.insights__content a{
+    color: #6f318c;
+}
+.insights__content a:hover{
+    color:#2c1338;
+}
