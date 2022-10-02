@@ -42,7 +42,7 @@ display: block;
 /* justify-content: center;
 ali#gn-items: center; */
 }#login_footer>div{
-    border: 2px solid red;
+   
     height: 200px;
     display: flex;
     justify-content: center;
