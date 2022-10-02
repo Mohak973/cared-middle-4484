@@ -40,9 +40,14 @@ let navbar2=()=>
 </div>
 <div id="underNavbar2-rightnav" style="float:right;">
     <div class="inside-rightnav" style="display: flex;">
-        <button>
+        <button
             <span>Book a demo</span>
             <span style="padding-left: 20px;">|</span>
+
+        <span><a href="../product.html">Products</a></span>
+            <div class="belowinsider">
+                <div class="insider"></div>
+            </div>
         </button>
         <button class="LoginBtn">
             <a href="../log&Signup/login.htnl"><span style="padding-left: 20px;">Log in</span></a>
@@ -51,6 +56,14 @@ let navbar2=()=>
             <button>
                 <a style="color:rgb(229, 124, 216)" href="Signup.html">Try for free</a>
             </button>
+            <button class="LoginBtn">
+            <span   style="padding-left: 20px;"><a href="../log&sigup/login.html"> Log in</a></span>
+            </button>
+            <div class="tryforfreeBtn" style="padding-left: 10px;">
+                <button>
+                    <a style="color:rgb(229, 124, 216)" href="Signup.html">Try for free</a>
+                </button>
+            </div>
         </div>
     </div>
 
