@@ -200,7 +200,11 @@ height: 27px;
         font-size: 10px;
         width: 85%;
      }
-
+#email{
+    padding-left: 10px;
+}#password{
+    padding-left: 10px;
+}
 
     
 
