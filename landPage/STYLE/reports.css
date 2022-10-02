@@ -1,0 +1,125 @@
+body{
+    margin:0px;
+    min-width: 850px;
+    background-color: #FEF9F8;
+}
+.reports__container{
+    margin-left: 180px;
+}
+.reports__nav{
+    font-size :14px;
+    color: #7B7B7B;
+    box-shadow: 5px 5px 10px #E7E2E1;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.reports__nav__top{
+    padding:20px 20px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.reports__export,
+.reports__save{
+    float:right;
+    color:#F5F3F5;
+}
+.reports__export:hover,
+.reports__save:hover{
+    cursor: pointer;
+    color: #c0b9c3;
+}
+.reports__nav__bottom{
+    padding: 15px 20px;
+    border-bottom:  1px solid #E8E8E8;
+}
+.reports__nav span{
+    margin-right:20px;
+}
+.reports__nav a{
+    text-decoration: none;
+    color: #7B7B7B;
+    cursor: pointer;
+}
+.reports__nav__top__strong{
+    font-size: 16px;
+    color:#2C1338;
+}
+.reports__nav__top a:hover{
+    color:#2C1338;
+}
+.reports__nav__bottom a:hover{
+    color:#2C1338;
+}
+.reports__nav__bottom img{
+    fill : #95899B;
+}
+.reports__nav__bottom__team,
+.reports__nav__bottom__client,
+.reports__nav__bottom__project,
+.reports__nav__bottom__tag,
+.reports__nav__bottom__description{
+    position: relative;
+}
+.reports__teamMenu,
+.reports__clientMenu,
+.reports__projectMenu,
+.reports__tagMenu,
+.reports__descriptionMenu{
+    position: absolute;
+    display:none;
+    top: 30px;
+    left:0px;
+    width:330px;
+    padding:15px;
+    border:1px solid  #e6e6e6;
+    background-color: white;
+    border-radius:15px;
+    z-index: 1;
+}
+.reports__teamMenu__show,
+.reports__clientMenu__show,
+.reports__projectMenu__show,
+.reports__tagMenu__show,
+.reports__descriptionMenu__show{
+    display: block;
+}
+
+.nav__bottom__menuSearch{
+    padding:5px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+}
+.nav__bottom__menuSearch span{
+    line-height: 35px;
+}
+
+.nav__bottom__menuInput{
+    border:none;
+    outline:none;
+    margin:none;
+    background-color: transparent;
+}
+
+.nav__bottom__menuSearch ~ div{
+    padding: 10px 0;
+}
+
+.nav__bottom__menubreak{
+    width:100%;
+    border-top:1px solid #7B7B7B;
+}
+
+.reports__content__container{
+    text-align: center;
+    margin:10% auto;
+}
+.reports__content__font24{
+    font-size: 24px;
+    margin:30px 0 10px;
+}
+.reports__content__grey{
+    color: #7B7B7B;
+    margin:1px;
+}
+.reports__barChart__container{
+    margin:20px 100px;
+}
