@@ -6,7 +6,7 @@ body{
 }
 #top_container{
 
-position: relative;
+/* position: relative; */
 text-align: center;
 
 margin-top: 20px;
@@ -20,7 +20,9 @@ height: 50%;
     left:19%;
    font-family: "GT Haptik Medium", sans-serif;;
    font-size:54px ;
-   color:#FCE5D8;
+   color:white;
+   filter:grayscale(5%);
+   
    font-weight: 400;
    line-height: 54px;
    max-width: 700px;
