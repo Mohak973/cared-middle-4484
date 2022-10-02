@@ -1,0 +1,334 @@
+body {
+    margin:0px;
+    min-width: 850px;
+    background-color: #FEF9F8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.timer {
+    margin-left: 180px;
+}
+
+
+
+.timer__nav__bar {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    top:0;
+    width: 88vw;
+    height: 65px;
+    z-index: 1;
+    border-bottom: 1px solid #E8E8E8;
+    box-shadow: 5px 3px 5px #E7E3E2;
+    min-width: 850px;
+}
+
+.timer__nav__flexGrow{
+    flex-grow: 1;
+}
+
+
+
+.timer__stop {
+    display: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: #E57CD8 !important;
+    border: none;
+    margin-top:10px;
+}
+
+.timer__start {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: #E57CD8 !important;
+    border: none;
+    display: block;
+    margin-top:10px;
+}
+
+.timer__nav__bar button{
+    outline: none;
+    border:none;
+    background-color: white;
+}
+
+.timer__nav__bar__form
+{
+    background-color: white;
+    border: none;
+}
+
+.timer__nav__bar__form input {
+    font-size: 18px;
+    margin-left: 20px;
+    border: none;
+    line-height: 60px;
+}
+
+.timer__nav__bar__form input:focus {
+    outline: none;
+}
+
+.timer__display {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 60px;
+}
+ 
+.timer__create,
+.timer__tag {
+    color: gray;
+}
+/* .timer__create i:hover{
+    color: black;
+}
+
+.timer__tag i:hover {
+    color: black;
+} */
+.timer__bill i {
+    color: gray;
+    margin: auto 15px;
+    /* border: 1px black solid; */
+}
+/* .timer__play {
+    background-color: rgb(230, 137, 209);
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    padding: 10px;
+    margin-left: 40px;
+} */
+
+.timer__list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.timer__list>button:nth-of-type(1) {
+    height: 49%;
+}
+
+.timer__list>button:nth-of-type(2) {
+    height: 49%;
+}
+.timer__display > div{
+    margin-right: 20px;
+}
+.dropdown > button, .dropdown ~ button{
+    margin-right: 15px;
+}
+
+
+
+/* Css for arrows start here ******************************* */
+.timer__sub {
+    margin-top: 80px;
+    width: 100%;
+}
+
+
+.timer__arrows {
+    width: 75%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.timer__leftArrow {
+    width: 350px;
+    height: 150px;
+    display: flex;
+    position: relative;
+}
+
+.timer__leftSub__1 {
+    position: absolute;
+    background-image: url(../IMAGES/left_arrow.png);
+    height: 75px;
+    width: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.timer__leftSub__2 {
+    position: absolute;
+    bottom: 10%;
+    left: 18%;
+}
+
+.timer__rightArrow {
+    width: 350px;
+    height: 150px;
+    display: flex;
+    position: relative;
+}
+
+.timer__rightSub__1 {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+
+.timer__rightSub__2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../IMAGES/right_arrow.png);
+    height: 75px;
+    width: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.timer__leftArrow p,
+.timer__rightArrow p {
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    color: #222222;
+}
+
+/* arrow fineshes here*********** below is button for week view*/
+
+.timer__week{
+    display: none;   
+}
+.timer__week button{
+    border: none;
+    background-color: white;
+    border:1px solid #E8E8E8;
+    box-shadow: 2px 2px 5px #E7E3E2;
+    border-radius: 5px;
+    width:130px;
+    outline: none;
+    height:40px;
+    float: right;
+    margin-right:20px;
+    margin-bottom:20px ;
+}
+
+
+.timer__middle {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    left: 45%;
+    /* margin: 300px 450px; */
+    /* left: 20px; */
+}
+
+.timer__middleImage {
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+    /* margin-right: 50px; */
+    margin-bottom: 25px;
+    width: 177px;
+    height: 179px;
+    background: url("https://web-assets.toggl.com/app/assets/images/toggl-stopwatch.e01d4e45.png");
+    background-repeat: no-repeat
+}
+
+.timer__middleText {
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* subbar css starts here ********************************************** */
+.timer__card__style{
+    width: 100%;
+    clear: both;    
+}
+
+.timerSubBar{
+    height: 50px;
+    width: auto;
+    background-color: white;
+    box-shadow: 0 3px 3px #EFE9EB;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #E8E8E8;
+    color: #422A4C;
+    font-size: 14px;
+}
+.timerSubBar >div {
+    margin: auto auto;
+}
+.list__description
+{
+    width:20%;
+    overflow: hidden;
+}
+.list__project,
+.list__tag
+{
+    width:12%;
+    overflow: hidden;
+}
+
+.timerSubBar i{
+    font-size: 15px;
+    color:#f2f2f2;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content button:hover {
+    background-color: #e0dddd;
+    padding:6px;
+    width:100%;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#dropdown_msgs, #dropdown_msgs1{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#dropdown_msgs >button, #dropdown_msgs1>button{
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    margin:5px 10px;
+}
+

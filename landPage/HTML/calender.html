@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../STYLE/nav.css">
+
+    <link href = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.css" rel = "stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.min.css" rel="stylesheet">
+    <link href="../STYLE/calender.css" rel = "stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.css" rel="stylesheet">
+    <script src = "https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.min.js"></script>
+
+
+
+    <title>calender</title>
+</head>
+
+<body>
+    <div class="nav__container" id="nav__container">
+
+        <div class="nav__container__logo">
+            <!-- Logo is added by css as a background image -->
+        </div>
+        <div class="nav__container__notification1">
+            <i class="fas fa-bell"></i>
+        </div>
+
+        <!-- the above one will be sticky and bottom one will use overflow scroll  -->
+
+        <div class="nav__container__scroll">
+            <div class="nav__container__timer">
+                <a href="timer.html" class="nav__container__flexbox">
+                    <i class="fas fa-clock"></i> &nbsp
+                    <div> Timer </div>
+                </a>
+            </div>
+
+
+            <div class="nav__container__scroll__analyze">
+
+                <div class="nav__container__category">
+                    <span>ANALYZE</span>
+                </div>
+                <div>
+                    <a href="../HTML/reports.html" class="nav__container__flexbox">
+                        <i class="fas fa-file-alt"></i> &nbsp
+                        <div> Reports</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="../HTML/insights.html" class="nav__container__flexbox">
+                        <i class="fas fa-chart-line"></i> &nbsp
+                        <div> Insights</div>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="nav__container__scroll__manage">
+                <div class="nav__container__category">
+                    <span>MANAGE</span>
+                </div>
+                <div>
+                    <a href="../HTML/projects.html" class="nav__container__flexbox">
+                        <i class="fas fa-folder-minus"></i> &nbsp
+                        <div>Projects</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="../HTML/clients.html" class="nav__container__flexbox">
+
+                        <i class="fas fa-user-circle"></i> &nbsp
+                        <div>Clients</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="../HTML/team.html" class="nav__container__flexbox">
+                        <i class="fas fa-user-friends"></i> &nbsp
+                        <div>Teams</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="../HTML/tag.html" class="nav__container__flexbox">
+                        <i class="fas fa-tag"></i> &nbsp
+                        <div>Tags</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="nav__container__flexbox">
+                        <i class="fas fa-cog"></i> &nbsp
+                        <div>Settings</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="nav__container__flexbox">
+                        <i class="fas fa-question-circle"></i> &nbsp
+                        <div>Help</div>
+                    </a>
+                </div>
+                <div class="nav__container__scroll__show-more" id="nav__container__scroll__show-more">
+                    <div class="nav__container__flexbox">
+                        <i class="fas fa-cloud-download-alt"></i> &nbsp
+                        <div>Import/Export</div>
+                    </div>
+                    <div class="nav__container__flexbox">
+                        <i class="fas fa-credit-card"></i> &nbsp
+                        <div>Subscription</div>
+                    </div>
+                    <div class="nav__container__flexbox">
+                        <i class="fas fa-mobile-alt"></i> &nbsp
+                        <div>Mobile App</div>
+                    </div>
+                    <div class="nav__container__flexbox">
+                        <i class="fas fa-desktop"></i> &nbsp
+                        <div>Desktop App</div>
+                    </div>
+                    <div class="nav__container__flexbox">
+                        <i class="fas fa-external-link-square-alt"></i> &nbsp
+                        <div>Blog</div>
+                    </div>
+                    <div class="nav__container__flexbox">
+                        <i class="fas fa-external-link-square-alt"></i> &nbsp
+                        <div>Jobs</div>
+                    </div>
+                </div>
+
+                <div class="nav__container__scroll__show-more__manage" id="nav__container__scroll__show-more__manage">
+                    <div class="nav__container__flexbox"> <i class="fas fa-angle-down"></i> &nbsp
+                        <div>Show more </div>
+                    </div>
+
+                </div>
+                <!-- Show more ---------- -->
+
+                <!-- Show less -->
+
+            </div>
+
+
+
+
+        </div>
+        <!-- Bottom one will be sticky -->
+        <div class="nav__container__workspace">
+
+            <div class="nav__container__category1">
+                <div>
+                    <i class="fas fa-bell"></i>
+                </div>
+
+                <div>
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <span>WORKSPACE</span>
+            </div>
+            <!-- <div>
+                <input type="text">
+            </div> -->
+            <div>
+                <!--  Name and email -->
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="weekly__container__outer">
+        <div class="weekly__container">
+            <div id='calendar'></div>
+        </div>
+    </div>
+    <script src="../SCRIPT/calendar.js"> </script>
+    <script src="../SCRIPT/nav.js"></script>
+    <script src="../SCRIPT/timer.js"></script>
+</body>
+
+</html>
+
+
+
+

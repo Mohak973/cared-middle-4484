@@ -1,78 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./index.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- top container -->
-    <div id="top_container">
-        <img src="https://public-assets.toggl.com/b/static/b32695b8d72a3ad4a9acc8fa09e92b28/6f15e/hero-icecream.avif
-        " alt="">
-        <h1>Everything you need in <em>one</em>  package</h1>
-       
-    </div>
-    <!-- anchor tag -->
-    <div id="div_a">
-        <a id="a1" href=""><div>Tracking</div></a>
-        <a id="a2" href=""><div>Reporting</div></a>
-        <a id="a3" href=""><div>Project & Revenue Tracking</div></a>
-        <a id="a4" href=""><div>Team Scheduling & Management</div></a>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toggl Track: Time Tracking Software for Any Workflow </title>
+        <link rel="icon" type="image/png" href="./track/icon.png" sizes="32x32">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./track/track.css">
+        <link rel="stylesheet" href="./Components/css.css">
+        <style>
+            .grid_box {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: auto;
+                margin-top: 50px;
+                justify-content: center;
+                width: 80%;
+                gap: 1.9rem;
+
+            }
+
+            .grid_box>div {
+                padding: 25px;
+                border-radius: 10px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+            }
+
+            .grid_box img {
+                width: 100%;
+            }
+
+            #third {
+                background-color: rgb(44, 19, 56);
+                padding-top: 100px;
+
+            }
+
+            #third>h1 {
+                text-align: center;
+                color: #FFF3ED;
+                font-size: 36px;
+
+            }
+
+            #second_list>h1 {
+                color: #FFF3ED;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header></header>
+        <nav></nav>
+        <div id="container">
+            <div id="form_parent">
+                <h1 id="heading">Simple time tracking to save <br> you <em>time</em> and <em>money</em>.</h1>
+                <div id="form">
+                    <div>
+                        <p class="first">Bill accurately, measure profitability, manage workloads — and spend less time
+                            on
+                            it all.</p>
+                        <div id="log_form">
+                            <div> <input type="email" placeholder="Email"></div>
+                            <div id="wrapper">
+                                <div id="password_alert">
+                                    <th class="thead">
+                                        <p>Please make sure that your password includes:</p>
+                                        <li id="policy-length">8 or more characters</li>
+                                        <li id="policy-uppercase">lowercase and uppercase</li>
+                                        <li id="policy-number">at least one number</li>
+                                    </th>
+                                </div>
+                                <input type="password" id="password" placeholder="A strong password">
+                                <span id="eye">
+                                    <i class="fa fa-eye" id="hide1" style="font-size:36px" onclick="toggle()"></i>
+                                    <i class="fa fa-eye-slash" id="hide2" style="display: none; font-size:36px "
+                                        onclick="toggle()"></i>
+                                </span>
+                            </div>
+                            <div id="button">
+                                <div> <button id="Sign_up_btn">Sign up with email</button> </div>
+                                <div>
+                                    <p>Or sign up with:</p>
+                                    <button class="google_btn"><i class="gg-google"></i></button>
+                                    <button class="google_btn" style="padding: 7px 10px;"><i class="fa fa-apple"
+                                            style="font-size:1.7rem"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="end">By signing up, you agree to our <a href="#">terms of service</a>, <a
+                                href="#">privacy
+                                policy</a> and to receiving marketing
+                            communication from Toggl Track. You can opt out anytime.</p>
+                    </div>
+
+
+
+
+                    <div id="timer">
+                        <div id="tilt_parent">
+                            <div id="tilt" data-tilt>
+                                <div>
+                                    <p class="animation_text">
+                                        Stand-up meeting
+
+                                    </p>
+                                </div>
+                                <div>
+                                    <div id="stop_watch">00:00:00</div>
+                                    <div id="icon">
+                                        <i class="fa fa-play-circle" id="play"></i>
+                                        <i class="fa fa-stop-circle" id="stop"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <img id="hand" src="./track/toggl-hand.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div id="timer_p">
+                            <h4>
+                                “I love the ease of just clocking in and out with <em> just one click!</em>”
+                                <br>
+                            </h4>
+                            <p>– Quelani P.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div>
+                    <p>TRUSTED BY OVER 6 MILLION USERS ACROSS 120 COUNTRIES</p>
+                    <img src="./track/brands-mixed-desktop-light.avif">
+                </div>
+            </div>
+
+
+
+            <div id="second">
+                <div>
+                    <div class="Wrapper2">
+                        <h2 id="heading2">Time tracking for all your
+                            productivity and profitability needs
+                        </h2>
+                        <div id="button">
+                            <button class=""><em>Employee time tracking</em></button>
+                            <button>
+                                <p>Billing & invoicing</p>
+                            </button>
+                            <button>
+                                <p>Project budgeting</p>
+                            </button>
+                            <button>
+                                <p>Reporting</p>
+                            </button>
+                            <button>
+                                <p>Payroll</p>
+                            </button>
+                        </div>
+                        <div id="img_parent">
+                            <div>
+                                <div id="second_list">
+                                    <h1 id="timesheets">Make timesheets history.</h1>
+                                    <ul>
+                                        <li>Get the data you need without disrupting your team's workflow. Track's
+                                            one-click
+                                            time tracking syncs across multiple platforms.</li>
+                                        <li>Get employee buy-in with a tool designed to empower teams with knowledge,
+                                            not
+                                            micromanage them.</li>
+                                    </ul>
+                                    <div><a href="#">Learn more</a>
+                                        <a caretdirection="right" color="#FFF3ED" href="#">Or sign up for free</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <img style="object-fit: contain; opacity: 1;"
+                                            sizes="(min-width: 759px) 759px, 100vw"
+                                            src="./track/employee-time-tracking-short.png">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="third">
+                <h1>Why do teams love Toggl Track?</h1>
+
+                <div class="grid_box">
+
+                    <div style="background-color: #f7d8f3;">
+
+                        <h4>Users report up to 25% increase in
+                            billable hours with accurate time tracking that accounts for every minute spent on
+                            client work.
+                            <!-- --><a href="#">Learn more</a>
+                        </h4>
+                        <img src="./track/feature-increasebillables.avif" alt="">
+
+
+                    </div>
+                    <div style="background-color: #FCE5D8;">
+                        <h4>Speed up team adoption with an anti-surveillance platform that gets a "yes" from every
+                            employee.
+                            <!-- --><a href="#">Learn more</a>
+                        </h4>
+                        <img src="./track//feature-trustemployee.avif" alt="">
+                        <div class="css-4tj34t-MiniCTA et001ls22">
+                            <p color="#6B5A74" class="css-1bl7hqx-P2 e6bq8xs6">Toggl Track stands against surveillance.
+                            </p><a href="#">Read about it here</a>
+                        </div>
+                    </div>
+                    <div style="background-color: #FCE5D8;">
+                        <h4>No training necessary. Get started right away with intuitive and welcoming features.
+                            <!-- --><a href="#">Learn more</a>
+                        </h4>
+                        <img src="./track/feature-intuitive.avif" alt="">
+                        <div>
+                            <p><strong>“The acceptance from all users is very high. I
+                                    have seen a 40+ year employee move from their Excel-based tracking they have used
+                                    forever, to this tool without any issue.”</strong></p>
+                            <div><img style="width: 30%;" src="./track/star.svg">5/5 stars on G2.com
+                                <!-- -->
+                            </div>
+                            <p>— Chris B, Systems Application Lead in an
+                                enterprise team</p>
+                        </div>
+                    </div>
+                    <div style="background-color: #FFF2D3;">
+                        <h4>Make time tracking and reporting a breeze with a beautifully-designed app experience.
+                            <!-- --><a href="#">Learn more</a>
+                        </h4>
+                        <img src="./track//feature-onetrack.avif" alt="">
+                        <div>
+                            <p><strong>“The acceptance from all users is very high. I
+                                    have seen a 40+ year employee move from their Excel-based tracking they have used
+                                    forever, to this tool without any issue.”</strong></p>
+                            <div><img style="width: 30%;" src="./track/star.svg">5/5 stars on G2.com
+                                <!-- -->
+                            </div>
+                            <p>— Chris B, Systems Application Lead in an
+                                enterprise team</p>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+
+            </div>
         </div>
-        <!-- time-tracking div -->
-   <div id="time_tracking">
-    <h2>Time Tracking</h2>
-    <p>There's more than one way to track time</p>
-    
-    <div id="track_img" >
-        <div id="track_1">
-           <img src="https://public-assets.toggl.space/58c88da8-9f59-4fb5-ae83-1ebcfa063516/static/8500be9b3ef28cfb9293446ddd6f28a3/feature-timers.png" alt="">
-           <h4>One-Click Timers</h4>
-           <p>Track time across the web app, desktop app, mobile app, or browser extension - with one click! All your entries will sync automatically.</p>
-        </div>
-        <div id="track_2">
-            <img src="https://public-assets.toggl.space/58c88da8-9f59-4fb5-ae83-1ebcfa063516/static/dc16bcc802fe68318016e002083b47d0/feature-timeline.png" alt="">
-            <h4>Background Tracking</h4>
-            <p>Auto-track every application or website you use for more than 10 seconds with our Timeline feature - then turn that data into time entries.</p>
-        </div>
-        <div id="track_3">
-            <img src="https://public-assets.toggl.space/58c88da8-9f59-4fb5-ae83-1ebcfa063516/static/bc5611683afd9f23db67c223c02f15e5/feature-cal-integration.png" alt="">
-            <h4>Calendar Integrations</h4>
-            <p>Integrate your Outlook or Google Calendar into Toggl Track's Calendar view and create or start time entries based on calendar events. Available for our web and mobile apps.</p>
-        </div>
-        <div id="track_4">
-            <img src="https://public-assets.toggl.space/58c88da8-9f59-4fb5-ae83-1ebcfa063516/static/3564bf4f714c41ebf64c711e2532c2e3/feature-autotracker.png" alt="">
-            <h4>Autotracker</h4>
-            <p>For the forgetful among us, set up Toggl Track to trigger time entry suggestions based on the software you're currently using.</p>
-        </div>
-        <div id="track_5">
-            <img src="https://public-assets.toggl.space/58c88da8-9f59-4fb5-ae83-1ebcfa063516/static/d4ecf8623e191207b4aef924be6f8d3b/feature-favorites.png" alt="">
-            <h4>Favorite time entries</h4>
-            <p>Pin your most frequently-used time entries to the top of your Timer page for easy access. Currently available for the web app, coming soon to other platforms.</p>
-        </div>
-        <div id="track_6">
-            <img src="https://public-assets.toggl.space/58c88da8-9f59-4fb5-ae83-1ebcfa063516/static/81089530d0f94f64ea34371d82de77ce/feature-jira.png" alt="">
-            <h4>Jira Sync</h4>
-            <p>Enter your information once, into Jira. Jira Sync will ensure that your Toggl Track Workspace is synced up to your Jira data so you can start tracking time right away—with up-to-date Jira data.</p>
-        </div>
-    </div>
-    <div id="app">
-    <div>
-      <h2>Over 100+ App Integrations</h2>
-      <p>Toggl Track's browser extensions allow you to start the timer directly from online tools like Asana, Todoist, Trello and more. With features like the Pomodoro Timer, idle detection, and tracking reminders, it’s the ultimate tool to help you stay focused on work.</p>
-      <p>Currently available on Chrome and Firefox.</p>
-      <a href="">See all Integration
-      </a>
-    </div>
-    <div>
-      <img src="https://public-assets.toggl.com/b/static/integrations-desktop-157a92c40e917125dc69d3ba8e043165.png" alt="">
-    </div>
- </div>
-   </div>
-   
-   
-</body>
-</html> 
+
+        <footer></footer>
+
+
+    </body>
+
+</html>
+<script src="./track//track.js"></script>
+
+
+
+<script type="module">
+    import { navbar, navbar2, footer } from './Components/nav_footer.js'
+    document.querySelector("header").innerHTML = navbar();
+    document.querySelector("footer").innerHTML = footer();
+    document.querySelector("nav").innerHTML = navbar2();
+
+</script>
+<!-- Load vanilla-tilt first -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>

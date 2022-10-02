@@ -1,7 +1,8 @@
 *{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    color: rgb(252, 229, 216);
+    /* color: rgb(252, 229, 216); */
+    color: white;
 }
 label{
 font-size: small;
@@ -13,12 +14,17 @@ display: block;
    font-size: 13px;
 
 }
-
+/* #lognav{
+width: auto;
+height: 150px;
+border: 2px solid red; 
+}*/
 #log_div{
    
     width: 100%;
-    height: 120vh;
-   display: flex;
+    height: 100vh;
+   display:flex;
+   
    justify-content: center;
    align-items: flex-end;
     background-color: rgb(65, 42, 76)
@@ -32,22 +38,31 @@ display: block;
 background-repeat: no-repeat;
 background-size: 100%;
 
-display: flex;
-justify-content: center;
-align-items: center;
+display: block;
+/* justify-content: center;
+ali#gn-items: center; */
+}#login_footer>div{
+   
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 90px;
 }
 #login{
-   
-    width: 45%;
+  
+    width: 50%;
     height: auto;
     padding-bottom: 6vh; 
-    margin: auto; 
+    margin:auto ; 
     position: absolute;
-     top: 48vh;
+     top: 40vh;
     left: 30%;
+    margin-bottom: 20%;
     background-color: rgb(44, 19, 56);
 z-index: 10;
 box-shadow: 0 1px 4px rgb(28 28 28 / 10%), 0 4px 6px rgb(28 28 28 / 4%), 0 8px 16px rgb(28 28 28 / 4%), 0 10px 20px 2px rgb(28 28 28 / 2%), 0 12px 24px 4px rgb(28 28 28 / 4%)
+
 }
 body {
     font-family: 'Inter', sans-serif;
@@ -61,16 +76,17 @@ body {
     color: rgb(255, 243, 237);
     margin-bottom: 25px;
     text-align: center;
+   
 }#login_footer{
-    line-height: 1.5;
+     line-height: 1.5;
     font-size: clamp(1.0125rem, 1.25vw, 1.125rem);
     color: rgb(255, 243, 237);
-    text-align: center;
-    
+    text-align: center; 
+     
 }
 input{
     width: 99%;
-    height: 30px;
+    height: 50px;
     border: 2px solid rgb(171, 160, 175);
     border: none;
     background: rgb(252, 229, 216);
@@ -85,7 +101,7 @@ input{
     margin-top: 55px;
 }
 
-button{
+#login_button,#by_signup{
     margin-top: 30px;
     text-align: center;
     display:  flex;
@@ -136,7 +152,7 @@ svg{-webkit-text-size-adjust: 90%;
         border-top: 4px solid transparent;
         border-left: 7px solid white;
         border-bottom: 4px solid transparent;
-        margin-top: 17px;
+        margin-top: 5px;
         margin-left: 5px;
     }#SSO{
 display: flex;
@@ -160,7 +176,11 @@ margin-top: 30px;
        font-size: small; 
       }#for_signup{
         margin-bottom: 75px;
-
+width: 100%;
+display: flex;
+justify-content: center;
+margin-left: 10rem;
+/* margin-top: -800px; */
       }
      #login_bygoogle{
         display: flex;
@@ -182,10 +202,35 @@ margin-top: 30px;
     justify-content: center;
    
      }
+    #nav_heading1{
 
+        width: 100%;
+        border: 2px solid green;
+        height: auto;
+        margin-top: 50px;
+    }#navar_heding>div{
+        width: 90%; 
+        border: 2px solid red;
+       margin: auto;
+  height: auto;
+       display: flex;
+    }
 
+    
      
      .with_other{
 width: 32px;
 height: 27px;
+     }#by_signup{
+        font-size: 10px;
+        width: 85%;
+       margin-top: 20px;
      }
+#email{
+    padding-left: 10px;
+}#password{
+    padding-left: 10px;
+}
+
+    
+

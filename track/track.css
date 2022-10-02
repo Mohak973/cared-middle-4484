@@ -67,11 +67,12 @@ em {
 
 .end>a:hover {
     color: #E57CD8;
+    transition: 0.6s;
 }
 
 input {
     padding: .8125rem 1.25rem;
-    width: 65%;
+    width: 347px;
     border: .125rem solid #ABA0AF;
     caret-color: #2C1338;
     background-color: #2C1338;
@@ -119,6 +120,9 @@ input::placeholder {
 #log_form,
 #timer {
     margin-bottom: 30px;
+}
+#timer{
+    width: 500px;
 }
 
 #log_form>div {
@@ -181,11 +185,13 @@ input::placeholder {
 #Sign_up_btn:hover {
     background-color: #564260;
     color: #FFF;
+    transition: 0.6s;
 }
 
 .google_btn:hover {
     background-color: #FCE5D8;
     color: black;
+    transition: 0.6s;
 
 }
 
@@ -204,7 +210,7 @@ input::placeholder {
 
 
 /*  Timet part */
-#timer>div:first-child {
+#tilt{
     color: black;
     background-color: #FFF;
     width: 65%;
@@ -214,7 +220,11 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
     border-radius: .9375rem;
-
+}
+#tilt>div{
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
 }
 
 #timer>div>div:nth-child(2) {
@@ -265,10 +275,10 @@ input::placeholder {
     position: absolute;
     margin: 12.5rem 3.75rem;
     animation-name: Hand;
-    margin-left: 320px;
+    margin-left: 100px;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    display: none;
+    display: block;
 }
 
 @keyframes Hand {
@@ -288,7 +298,7 @@ input::placeholder {
     }
 
     100% {
-        top: 250px;
+        top: 240px;
         opacity: 0.1;
     }
 
@@ -297,8 +307,31 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     display: none;
+    animation: timer_p;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
+@keyframes timer_p{
+    0% {
 
+        opacity: 0.1;   
+    }
+
+    25% {
+
+        opacity: 0.3;
+    }
+
+    50% {
+
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
 #timer_p>h4 {
     max-width: 60%;
     opacity: 1;
@@ -312,11 +345,159 @@ input::placeholder {
     margin-left: 3.125rem;
 }
 #tilt:hover{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+    box-shadow: 1px 0 1px -0.5px #f6eddc inset, -1.25px 0 0.5px -0.5px #9d9885 inset, 0 0 1px 2px #f7f5e8 inset, 0 10px 5px -5px rgb(34 33 28 / 45%), 0 10px 7px -3px rgb(40 36 33 / 25%);
 }
 
 
 
 /* 2nd parent div */
 
+#main_navbar{
+    position: sticky;
+    top: 0px;
+}
+#img_parent {
+    width: 80%;
+    margin: auto;
+    background-color: #412A4C;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+#img_parent>div:first-child {
+    display: flex;
+}
+
+#container {
+    margin-top: 20px;
+}
+
+#password_alert {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    margin: 0px 0px 177px 76px;
+    font-size: 13px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 80px;
+
+}
+
+#password_alert p {
+
+    color: black;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+#heading2 {
+    color: #412A4C;
+    font-family: 'GT Haptik Medium', sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: clamp(3rem * 0.6, 3vw, 3rem);
+    margin: 30px auto 45px;
+    max-width: 800px;
+    text-align: center;
+    z-index: 1
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-left: -10px;
+    margin-bottom: 50px;
+
+}
+
+#button>button:first-child {
+    background-color: #412A4C;
+
+}
+
+#button>button:first-child:hover {
+    background-color: #412A4C;
+    transition: 0.6s;
+
+}
+
+#button>button:first-child>em {
+    color: #FCE5D8;
+
+}
+
+#button>button {
+    background-color: #ffebbd;
+
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bolder;
+
+}
+
+button p {
+    color: #412A4C;
+
+}
+
+#button>button:hover {
+    transform: rotate(2deg);
+    background-color: #f7d27d;
+    transition: 0.6s;
+}
+
+#second img {
+    width: 40.75rem;
+
+}
+
+#second_list {
+    padding: 20px;
+}
+
+#second_list>div>a:first-child {
+    background-color: #E57CD8;
+    width: 200px;
+    padding: 15px 35px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    margin-right: 20px;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+
+#second_list>div>a:first-child:hover {
+    background-color: #564260;
+    color: #FFF;
+    transition: 0.6s;
+
+}
+
+#second_list li {
+    margin: 10px;
+    margin-left: 30px;
+    color: white;
+    line-height: 1.6;
+    list-style: none;
+}
+#second_list li:before {
+        color: #E57CD8;
+        margin-left: -30px;
+        margin-bottom: -30px;
+        font-size: 25px;
+        content:"\2714\0020";
+        
+    }
+
+#second_list>div:last-child {
+    margin-top: 50px;
+}
 

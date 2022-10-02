@@ -1,0 +1,269 @@
+body{
+    margin:0px;
+    min-width: 850px;
+    background-color: #FEF9F8;
+}
+.projects__container{
+    margin-left:180px;
+}
+.font16{
+    font-size: 16px;
+    line-height: 30px;
+}
+.purple{
+    color:#2C1338;
+}
+.projects__nav{
+    font-size :14px;
+    color: #7B7B7B;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    position:fixed;
+    width:88vw;
+    min-width: 850px;
+    top:0;
+}
+.projects__flex{
+    display: flex;
+}
+.projects__flexgrow{
+    flex-grow:1;
+}
+
+
+.projects__nav__top{
+    padding:15px 20px;
+    border-bottom: 1px solid #E8E8E8;
+    height:35px;
+}
+.projects__nav__top__btn{
+    width:120px;
+    height:35px;
+    border:none;
+    background-color: #DD6FD1;
+    color:white;
+    border-radius:10px;
+    outline:none;
+    margin-right: 50px;
+}
+.projects__nav__top__btn:hover{
+    background-color: #c463ba;
+}
+
+
+
+
+.projects__nav__bottom{
+    height:30px;
+    border-bottom: 1px solid #E8E8E8;
+    box-shadow: 5px 5px 10px #E7E3E2;
+    padding:10px 20px;
+}
+.projects__select{
+    margin-right: 20px;
+}
+.projects__select select{
+    width:130px;
+    height: 33px;
+    border:none;
+    outline:none;
+    border:1px solid #95899B;
+    border-radius: 10px;
+    padding: 5px;
+}
+.projects__nav__bottom a{
+    text-decoration: none;
+    color: #7B7B7B;
+}
+.projects__nav__bottom a:hover{
+    color:#2C1338;
+    cursor: pointer;
+}
+.projects__nav__bottom > span{
+    margin-right:20px;
+    line-height: 35px;
+}
+.reports__nav__bottom__team,
+.reports__nav__bottom__client,
+.reports__nav__bottom__project{
+    position: relative;
+}
+.reports__teamMenu,
+.reports__clientMenu,
+.reports__projectMenu{
+    position: absolute;
+    display:none;
+    top: 30px;
+    left:0px;
+    width:330px;
+    padding:15px;
+    border:1px solid  #e6e6e6;
+    background-color: white;
+    border-radius:15px;
+    z-index: 1;
+}
+.reports__teamMenu__show,
+.reports__clientMenu__show,
+.reports__projectMenu__show{
+    display: block;
+}
+.nav__bottom__menuSearch{
+    padding:5px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+}
+.nav__bottom__menuInput{
+    border:none;
+    outline:none;
+    margin:none;
+    background-color: transparent;
+}
+.nav__bottom__menuSearch ~ div{
+    padding: 10px 0;
+}
+.nav__bottom__menubreak{
+    width:100%;
+    border-top:1px solid #7B7B7B;
+}
+
+
+
+.project__content__container{
+    height:
+}
+.projects__content{
+    text-align: center;
+    margin:20% auto;
+}
+.projects__content__font24{
+    font-size: 24px;
+    margin:30px 0 10px;
+}
+.projects__content__grey{
+    color: #7B7B7B;
+    margin:1px;
+}
+
+
+.popup__container{
+    width: 300px;
+    height: 325px;
+    border:1px solid #d9d9d9;
+    border-radius: 12px;
+    text-align: center;
+    position:fixed;
+    top:30vh;
+    left:36vw;
+    display: none;
+    background-color: white;
+    padding:20px 30px;
+}
+.popup__show{
+    display: block;
+}
+.popup__projectName,.popup__client{
+    width:275px;
+    padding:5px 10px;
+    height:25px;
+    border-radius: 10px;
+    border:none;
+    border:1px solid #d9d9d9;
+    outline: none;
+}
+.popup__submit{
+    width:300px;
+    border:none;
+    outline:none;
+    height:35px;
+    background-color:#DD6FD1;
+    color:white;
+    border-radius: 10px;
+    margin:15px 0;
+}
+.popup__submit:hover{
+    background-color: #c463ba;
+}
+.popup__header{
+    text-align: left;
+    font-size: 14px;
+    margin:15px 0;
+}
+.popup__cancel{
+    float:right;
+}
+.popup__workspace
+{
+    width:300px;
+    border:none;
+    outline:none;
+    height:35px;
+    border-radius: 10px;
+    margin:15px 0;
+    padding:0 10px;
+    border: 1px solid #d9d9d9;
+    color: #7B7B7B;
+}
+.popup__projectName__validation{
+    display:none;
+    text-align: left;
+    color:red;
+    font-size: 10px;
+    margin:3px 0 0 8px;
+}
+.popup__projectName__validation__alert{
+    display:block;
+}
+
+
+
+
+.projectListHeader{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    border-bottom:1px solid #E8E8E8;
+    border-top:1px solid #E8E8E8;
+    margin-top:150px;
+    background-color: white;
+}
+.projectListItem{
+    width:100%;
+    height:50px;
+    border-bottom:1px solid #E8E8E8;
+    line-height: 50px;
+    background-color: white;
+}
+.projectListItem:hover{
+    background-color: #f3f3f3;
+}
+.projectListHeader div{
+    font-size: 11px;
+    color: #9A8E9F;
+}
+.projectListItem div{
+    font-size: 14px;
+}
+.projectList__name,.projectHeader__name{
+    width:35%;
+    padding-left:20px;
+}
+.projectList__client,.projectHeader__client{
+    width:15%;
+}
+.projectList__status,.projectHeader__status{
+    width:12%;
+}
+.projectList__team,.projectHeader__team{
+    width:15%;
+}
+.projectList__delete{
+    width:100px;
+    height:30px;
+    margin:10px;
+    border-radius:8px;
+    outline:none;
+    border:none;
+    background-color: #ff4d4d;
+    color:white;
+}
+
