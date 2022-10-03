@@ -58,7 +58,7 @@ aout.forEach((ele) => {
 });
 
 if(pres){
-  alert("alred")
+  alert("user already exists ")
 }
 else{
 
