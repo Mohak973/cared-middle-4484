@@ -79,8 +79,10 @@ window.location.href="../landPage/HTML/timer.html"
  
 }
 
-import { navbar, footer } from '../Components/nav_footer.js'
-console.log(navbar())
+import { navbar,navbar2, footer } from '../Components/nav_footer.js'
+document.querySelector("nav").innerHTML=navbar2()
+document.getElementById("navbar").innerHTML=navbar()
+
 document.getElementById("footer1").innerHTML=footer()
 
 

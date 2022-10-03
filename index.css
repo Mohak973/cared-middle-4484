@@ -9,7 +9,7 @@ body{
 /* position: relative; */
 text-align: center;
 
-margin-top: 20px;
+margin-top: -65px;
 height: 50%;
 
 
@@ -41,7 +41,7 @@ height: 50%;
 #div_a{
     
      position:sticky; 
-     top:-5px;
+     top:80px;
   display: flex; ;
  width:100%;
 margin-top: 0px;
@@ -130,8 +130,6 @@ margin-top: 0px;
 } */
 #time_tracking{
     /*  /* IE 9 */
-    
-    border:solid yellow;
     background-color: rgb(44, 19, 56); 
     margin-top: -31px;
     text-align: center;
@@ -421,7 +419,6 @@ padding-top: 150px;
   
 }
 #last{
-    width:fit-content;
    display: flex; 
     background-color:#2C1338;
     padding-left: 100px; 
@@ -438,8 +435,7 @@ padding-top: 150px;
     margin-top: 200px;
     width:60%;
     height: 500px;;
-    position: relative;
-   
+  
 }
 #last_1>div:nth-child(1)>h2{
     font-size: 38px;

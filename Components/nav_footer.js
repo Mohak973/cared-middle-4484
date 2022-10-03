@@ -15,7 +15,7 @@ let navbar=()=>
 let navbar2=()=>
 `<nav id="main_navbar" class="navbar2">
 <div class="underNavbar2">
-    <div class="logo"><img
+    <div class="logo"><img 
             src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png"
             alt=""></div>
     <button>

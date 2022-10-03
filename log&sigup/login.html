@@ -1,71 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../navbar/css.css"> 
-     <link rel="stylesheet" href="../Components/css.css">
-    <link rel="stylesheet" href="login.css">
-    
-</head>
-<body>
 
-   
-    <div id="login_footer">
-       <div>
-        <div><h1 >Log in to your account</h1>
-        
-        <div>Let's get tracking!</div>
-        </div>
-    </div>
-    </div>
-    
-    <div id="log_div">
-       
-    <div id="login">
-        
-        <div id="loging_main">
-            <p id="wrong"></p>
-            <div id="login_bygoogle">
-                <div id="google">
-                    <svg width="28" height="28" viewBox="0 0 20 20"  class="with_other"><g fill="none"><path d="M17.876 10.284c0-.574-.052-1.127-.147-1.657H10.1v3.134h4.36a3.726 3.726 0 01-1.617 2.444v2.033h2.618c1.531-1.41 2.415-3.487 2.415-5.954z" fill="#4285F4"></path><path d="M10.1 18.2c2.187 0 4.02-.725 5.36-1.962l-2.617-2.033c-.725.486-1.653.773-2.743.773-2.11 0-3.895-1.424-4.532-3.339H2.862v2.099A8.097 8.097 0 0010.1 18.2z" fill="#34A853"></path><path d="M5.568 11.639a4.869 4.869 0 01-.254-1.539c0-.534.092-1.053.254-1.539V6.462H2.862A8.097 8.097 0 002 10.1c0 1.307.313 2.544.862 3.638l2.706-2.099z" fill="#FBBC05"></path><path d="M10.1 5.222c1.19 0 2.257.408 3.096 1.21L15.52 4.11C14.117 2.803 12.283 2 10.1 2a8.097 8.097 0 00-7.238 4.462l2.706 2.099c.637-1.915 2.422-3.34 4.532-3.34z" fill="#EA4335"></path></g></svg>
-                    login via Google </div>
-                <div id="apple">
-                    <svg viewBox="0 0 20 20" version="1.1" class="with_other"><g><path d="M15.027 9.67a4.048 4.048 0 011.916-3.392 4.112 4.112 0 00-3.244-1.763c-1.365-.144-2.688.82-3.384.82-.709 0-1.78-.806-2.933-.782a4.317 4.317 0 00-3.636 2.229c-1.571 2.735-.399 6.756 1.107 8.967.753 1.083 1.634 2.293 2.786 2.25 1.127-.047 1.548-.723 2.91-.723 1.347 0 1.742.723 2.918.696 1.21-.02 1.972-1.088 2.699-2.181a8.975 8.975 0 001.234-2.527 3.908 3.908 0 01-2.373-3.594zm-2.285-6.826A3.873 3.873 0 0013.685 0a4.25 4.25 0 00-2.714 1.352 3.69 3.69 0 00-.968 2.739 3.523 3.523 0 002.739-1.247z" fill="#000"></path></g></svg>
-                   
-                    login via Apple</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../navbar/css.css">
+        <link rel="stylesheet" href="../Components/css.css">
+        <link rel="stylesheet" href="login.css">
+        <style>
+            .underNavbar2 {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                height: 84px;
+                margin: 0.2px;
+                padding: 0px 30px;
+                background-color: transparent;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="navbar"></div>
+        <nav id="main_navbar"></nav>
+
+
+        <div id="login_footer">
+            <div>
+                <div>
+                    <h1>Log in to your account</h1>
+
+                    <div>Let's get tracking!</div>
+                </div>
             </div>
-            <p></p>
-         <label for="input">Email</label>
-        <br>
-<input type="email" id="email" placeholder="Email">
-<p id="b_email"></p>
-<label for="">Password</label>
-<br>
-<input type="password" placeholder="Password" id="password">
-<p id="b_password"></p>
-<p id="forgetpassword">Forgot password?</p>
-<button id="login_button">Log in</button>
-<div id="SSO">
-<svg viewBox="0 0 535.5 535.5" fill="#FCE5D8"><path d="M420.75 178.5h-25.5v-51c0-71.4-56.1-127.5-127.5-127.5s-127.5 56.1-127.5 127.5v51h-25.5c-28.05 0-51 22.95-51 51v255c0 28.05 22.95 51 51 51h306c28.05 0 51-22.95 51-51v-255c0-28.05-22.95-51-51-51zm-153 229.5c-28.05 0-51-22.95-51-51s22.95-51 51-51 51 22.95 51 51-22.95 51-51 51zm79.05-229.5H188.7v-51c0-43.35 35.7-79.05 79.05-79.05 43.35 0 79.05 35.7 79.05 79.05v51z"></path></svg>
-<p>Company login (SSO)</p>
-<div class="triangle-left"></div>
-</div>
-</div>
+        </div>
 
-    </div>
-<div id="for_signup"> 
-    <div><p>Don't have an account?</p>
-    <button id="by_signup">Sign up for free</button>
-    </div>
-</div>
+        <div id="log_div">
 
-    </div>
-    <div id="footer1"></div>
-</body>
+            <div id="login">
+
+                <div id="loging_main">
+                    <p id="wrong"></p>
+                    <div id="login_bygoogle">
+                        <div id="google">
+                            <svg width="28" height="28" viewBox="0 0 20 20" class="with_other">
+                                <g fill="none">
+                                    <path
+                                        d="M17.876 10.284c0-.574-.052-1.127-.147-1.657H10.1v3.134h4.36a3.726 3.726 0 01-1.617 2.444v2.033h2.618c1.531-1.41 2.415-3.487 2.415-5.954z"
+                                        fill="#4285F4"></path>
+                                    <path
+                                        d="M10.1 18.2c2.187 0 4.02-.725 5.36-1.962l-2.617-2.033c-.725.486-1.653.773-2.743.773-2.11 0-3.895-1.424-4.532-3.339H2.862v2.099A8.097 8.097 0 0010.1 18.2z"
+                                        fill="#34A853"></path>
+                                    <path
+                                        d="M5.568 11.639a4.869 4.869 0 01-.254-1.539c0-.534.092-1.053.254-1.539V6.462H2.862A8.097 8.097 0 002 10.1c0 1.307.313 2.544.862 3.638l2.706-2.099z"
+                                        fill="#FBBC05"></path>
+                                    <path
+                                        d="M10.1 5.222c1.19 0 2.257.408 3.096 1.21L15.52 4.11C14.117 2.803 12.283 2 10.1 2a8.097 8.097 0 00-7.238 4.462l2.706 2.099c.637-1.915 2.422-3.34 4.532-3.34z"
+                                        fill="#EA4335"></path>
+                                </g>
+                            </svg>
+                            login via Google
+                        </div>
+                        <div id="apple">
+                            <svg viewBox="0 0 20 20" version="1.1" class="with_other">
+                                <g>
+                                    <path
+                                        d="M15.027 9.67a4.048 4.048 0 011.916-3.392 4.112 4.112 0 00-3.244-1.763c-1.365-.144-2.688.82-3.384.82-.709 0-1.78-.806-2.933-.782a4.317 4.317 0 00-3.636 2.229c-1.571 2.735-.399 6.756 1.107 8.967.753 1.083 1.634 2.293 2.786 2.25 1.127-.047 1.548-.723 2.91-.723 1.347 0 1.742.723 2.918.696 1.21-.02 1.972-1.088 2.699-2.181a8.975 8.975 0 001.234-2.527 3.908 3.908 0 01-2.373-3.594zm-2.285-6.826A3.873 3.873 0 0013.685 0a4.25 4.25 0 00-2.714 1.352 3.69 3.69 0 00-.968 2.739 3.523 3.523 0 002.739-1.247z"
+                                        fill="#000"></path>
+                                </g>
+                            </svg>
+
+                            login via Apple
+                        </div>
+                    </div>
+                    <p></p>
+                    <label for="input">Email</label>
+                    <br>
+                    <input type="email" id="email" placeholder="Email">
+                    <p id="b_email"></p>
+                    <label for="">Password</label>
+                    <br>
+                    <input type="password" placeholder="Password" id="password">
+                    <p id="b_password"></p>
+                    <p id="forgetpassword">Forgot password?</p>
+                    <button id="login_button">Log in</button>
+                    <div id="SSO">
+                        <svg viewBox="0 0 535.5 535.5" fill="#FCE5D8">
+                            <path
+                                d="M420.75 178.5h-25.5v-51c0-71.4-56.1-127.5-127.5-127.5s-127.5 56.1-127.5 127.5v51h-25.5c-28.05 0-51 22.95-51 51v255c0 28.05 22.95 51 51 51h306c28.05 0 51-22.95 51-51v-255c0-28.05-22.95-51-51-51zm-153 229.5c-28.05 0-51-22.95-51-51s22.95-51 51-51 51 22.95 51 51-22.95 51-51 51zm79.05-229.5H188.7v-51c0-43.35 35.7-79.05 79.05-79.05 43.35 0 79.05 35.7 79.05 79.05v51z">
+                            </path>
+                        </svg>
+                        <p>Company login (SSO)</p>
+                        <div class="triangle-left"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="for_signup">
+                <div>
+                    <p>Don't have an account?</p>
+                    <button id="by_signup">Sign up for free</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footer1"></div>
+    </body>
+
 </html>
+
+
+
 <script src="login.js" type="module"></script>
-
-
+<script>
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 0) {
+            document.querySelector(".underNavbar2").style.backgroundColor = "#2c1338"
+        } else {
+            document.querySelector(".underNavbar2").style.backgroundColor = "transparent"
+        }
+    })
+</script>
