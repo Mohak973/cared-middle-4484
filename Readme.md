@@ -50,8 +50,5 @@
  <li>
   <h5>Dynamic Routes</h5>
   </li>
- <li>
-  <h5>Full responsive</h5>
-   </li>
 </ul>
 
